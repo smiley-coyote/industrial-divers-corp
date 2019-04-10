@@ -45,6 +45,9 @@ section {
 section:not(.hero):nth-child(even) {
 	background-color: #f5f5f5;
 }
+section:not(.hero):nth-child(odd) {
+	background-color: #dddddd;
+}
 
 .grid {
 	width: 100%;
@@ -136,10 +139,11 @@ header nav li {
 	text-align: center;
 	min-height: 100vh;
 	color: #fff;
+	
 }
 
 .hero #background-image1 {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -150,8 +154,8 @@ header nav li {
 	opacity: 1;
 }
 
-.hero #background-image2 {
-	position: absolute;
+#background-image2 {
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -162,8 +166,8 @@ header nav li {
 	opacity: 1;
 }
 
-.hero #background-image3 {
-	position: absolute;
+#background-image3 {
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -174,8 +178,8 @@ header nav li {
 	opacity: 1;
 }
 
-.hero #background-image4 {
-	position: absolute;
+#background-image4 {
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -209,7 +213,7 @@ header nav li {
 	padding: 20px 46px;
 }
 
-.hero-content-area {
+#hero-content-area {
 	opacity: 0;
 	margin-top: 100px;
 	animation: 1s slidefade 1s forwards;
