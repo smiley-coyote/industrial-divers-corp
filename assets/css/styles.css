@@ -4,6 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+
 }
 
 html {
@@ -85,7 +86,23 @@ section p {
 	}
 }
 
-/*Header Styles*/
+.black-text {
+	color: black;
+	
+}
+
+#background-image{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #80a3db;
+	z-index: -1;
+}
+
+/*Header Styles for home page*/
 
 header {
 	position: absolute;
@@ -124,29 +141,29 @@ header nav li {
 	
 }
 
-header nav .services .service-tab a {
+header nav .services-nav .service-tab a {
 	color: rgb(233, 233, 233);
 }
 
 
-header nav .services .service-tab a:hover{
+header nav .services-nav .service-tab a:hover{
 	color: #fff;
 }
 
 .service-tab {
 	position: absolute;
-	height: 130px;
+	height: 100px;
 	background-color: rgba(201, 201, 201, 0.514);
 	padding: 10px;
-display: none;
-border-radius: 3px;
+	display: none;
+	border-radius: 3px;
 }
 
 .service-tab li{
 	padding: 5px;
 }
 
-header nav .services:hover .service-tab{
+header nav .services-nav:hover .service-tab{
 	display: block;
 }
 
@@ -173,7 +190,7 @@ header nav .services:hover .service-tab{
 	
 }
 
-.hero #background-image1 {
+#background-image1 {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -278,6 +295,14 @@ header nav .services:hover .service-tab{
 
 /*Services Section*/
 
+.services a {
+	color: rgb(112, 111, 111);
+}
+
+.services a:hover {
+	color: #555;
+}
+
 .services .grid li {
 	padding: 50px;
 	flex-basis: 50%;
@@ -292,6 +317,7 @@ header nav .services:hover .service-tab{
 	font-size: 30px;
 	margin: 25px 0;
 }
+
 
 @media (max-width: 800px) {
 	.services .grid li {
@@ -377,12 +403,20 @@ header nav .services:hover .service-tab{
 /*Footer Section*/
 
 footer {
+	font-size: 12px;
 	display: flex;
 	align-items: center;
+	text-align: center;
 	justify-content: space-around;
 	background-color: #607d8b;
 	color: #fff;
 	padding: 20px 0;
+}
+
+footer .contact-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 footer ul {
@@ -400,6 +434,7 @@ footer p {
 	align-self: center;
 }
 
+
 @media (max-width: 1100px) {
 	footer {
 		flex-direction: column;
@@ -414,3 +449,135 @@ footer p {
 		margin: 0 8px;
 	}
 } 
+
+/* About Section */
+
+.about {
+	position: relative;
+	min-height: 100vh;
+	background-image: url("../img/divers17.jpg");
+	background-size: cover;
+	background-color: #80a3db;
+}
+
+.about ul{
+	list-style-type: circle;
+	margin-left: 20px;
+}
+
+.about p{
+	text-align: left;
+	margin: 0 0 25px 0;
+	padding: 0;
+}
+
+.about-content-area{
+	flex-wrap: wrap;
+	padding: 25px;
+	width: 75%;
+	background-color: rgba(236, 236, 236, 0.815);
+margin-top: 50px;
+	border: 1px solid black;
+}
+
+
+@media (max-width: 800px) {
+	.about {
+		min-height: 600px;
+	}
+
+	.about h1 {
+		font-size: 48px;
+	}
+
+	.about h3 {
+		font-size: 24px;
+	}
+
+	.about a.btn {
+		padding: 15px 40px;
+	}
+}
+
+/* Services Page */
+
+.services-page {
+	position: relative;
+	min-height: 100vh;
+	background-image: url("../img/divers4.jpg");
+	background-size: cover;
+	background-color: #80a3db;
+
+}
+
+.services-page ul {
+	list-style-type: circle;
+	margin-left: 20px;
+}
+
+.services-content {
+	flex-wrap: wrap;
+	padding: 25px;
+	width: 75%;
+	background-color: rgba(236, 236, 236, 0.815);
+margin-top: 50px;
+	border: 1px solid black;
+}
+
+.services-content p{
+	text-align: left;
+	margin: 0 0 25px 0;
+	padding: 0;
+}
+
+@media (max-width: 1000px) {
+	.services-content{
+		width: 90%;
+		margin-top: 100px;
+	}
+}
+
+@media (max-width: 800px){
+
+	.services-content{
+		width: 100%;
+	}
+}
+
+/* Contact Page */
+
+.contact-page{
+	position: relative;
+	min-height: 100vh;
+	background-image: url("../img/divers21.jpg");
+	background-size: cover;
+	background-color: #80a3db;
+}
+
+.contact-page-content-area{
+	flex-wrap: wrap;
+	padding: 25px;
+	width: 75%;
+	background-color: rgba(236, 236, 236, 0.815);
+margin-top: 50px;
+	border: 1px solid black;
+}
+
+/* Employment */
+
+.employment-page{
+	position: relative;
+	min-height: 100vh;
+	background-image: url("../img/divers22.jpg");
+	background-size: cover;
+	background-color: #80a3db;
+}
+
+.employment-page-content-area{
+	flex-wrap: wrap;
+	padding: 25px;
+	width: 75%;
+	background-color: rgba(236, 236, 236, 0.815);
+margin-top: 50px;
+	border: 1px solid black;
+}
