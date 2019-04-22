@@ -1,90 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Industrial Divers Corp | Construction Services</title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link rel="stylesheet" href="../assets/css/styles.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      </head>
-      
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Industrial Divers Corp | Construction Services</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
 <body onload="header()">
-    <header>
-        <h2><a href="../index.html">Industrial Divers Corporation</a></h2>
-        <nav>
-          <li class="services-nav" >
-            <a href="#services">Services</a>
-         
-            <ul class="service-tab">
-              <a href="construction.html"><li>Construction</li></a>
-              <a href="dredging.html"><li>Dredging</li></a>
-              <a href="environmental.html"><li>Environmental</li></a>
-            </ul>
-    
-          </li>
-          <li><a href="../about.html">About Us</a></li>
-          <li><a href="../employment.html">Employment</a></li>
-          <li><a href="../contact.html">Contact</a></li>
-        </nav>
-      </header>
-    
-      <section class="services-page">
-        <div id="background-image" style="background-image: url(assets/img/divers8.jpg);"></div>
+  <header>
+    <h2><a href="../index.html">Industrial Divers Corporation</a></h2>
+    <nav>
+      <li class="services-nav">
+        <a href="#services">Services</a>
 
-        <div class="services-content">
-            <h3 class="title">Construction Services</h3>
-            <h4>Power Plant Services</h4>
+        <ul class="service-tab">
+          <a href="construction.html">
+            <li>Construction</li>
+          </a>
+          <a href="dredging.html">
+            <li>Dredging</li>
+          </a>
+          <a href="environmental.html">
+            <li>Environmental</li>
+          </a>
+        </ul>
+
+      </li>
+      <li><a href="../about.html">About Us</a></li>
+      <li><a href="../employment.html">Employment</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </nav>
+  </header>
+
+
+  <section class="services-page">
+ 
+      <div id="image-page">
+        <div class="image-page-header">
+        <div onclick=closePicture() class="close-container">X</div>
+      </div>
+        <img id="open-img" src="" />
+      </div>
+    <div id="background-image" style="background-image: url(assets/img/divers8.jpg);"></div>
+
+    <div class="services-content">
+        <h3 class="title">Construction Services</h3>
+        <hr>
+      <ul>
+        <h4>Power Plant Services</h4>
+        <li>
+            <a href="#image-page">
+          <img onclick=openPicture(this.src) src="../assets/img/divers5.jpg" />
+          </a>
           <p>
-              IDC provides diving services to many of the Florida Power & 
-              Light Plants. These services include; de-mineralized water tank 
-              diving, replacement and cleaning of security nets around 
-              discharge, repair and replacement of traveling water screens from 
-              top to bottom, Inspection and cleaning of intake wells, photographic 
-              and video documentation, reinforce cross beam piling by forming 
-              and pumping with concrete, diving in hot water discharge, stop log 
-              installation and sealingm, new plant construction, and intake and 
-              discharge tunnel inspection.
+            IDC provides diving services to many of the Florida Power &
+            Light Plants. These services include; de-mineralized water tank
+            diving, replacement and cleaning of security nets around
+            discharge, repair and replacement of traveling water screens from
+            top to bottom, Inspection and cleaning of intake wells, photographic
+            and video documentation, reinforce cross beam piling by forming
+            and pumping with concrete, diving in hot water discharge, stop log
+            installation and sealingm, new plant construction, and intake and
+            discharge tunnel inspection.
           </p>
 
-          <h4>Cofferdam and Foundation Specialist</h4>
+
+        </li>
+        <hr>
+        <h4>Cofferdam and Foundation Specialist</h4>
+        <li>
+          <a href="#image-page">
+          <img onclick=openPicture(this.src) src="../assets/img/divers2.jpg" />
+        </a>
           <p>
-              IDC performs multiple cofferdam projects every year. Cofferdam 
-              preparation has become an IDC specialty. IDC assists our customers 
-              in inspection and cleaning of coffer dam walls and auger piles for 
-              grout adhering. Dredging and de-mucking of excess silt and mud off 
-              cofferdam bottom in preparation for grouting. Chipping and removing 
-              of rock that cannot be reached by conventional digging methods. 
-              Checking and setting rock anchors to proper elevations. Finally, 
-              repairing leaks after grouting.
+            IDC performs multiple cofferdam projects every year. Cofferdam
+            preparation has become an IDC specialty. IDC assists our customers
+            in inspection and cleaning of coffer dam walls and auger piles for
+            grout adhering. Dredging and de-mucking of excess silt and mud off
+            cofferdam bottom in preparation for grouting. Chipping and removing
+            of rock that cannot be reached by conventional digging methods.
+            Checking and setting rock anchors to proper elevations. Finally,
+            repairing leaks after grouting.
           </p>
 
-          <h4>Cable Lay, Shore Endings, & Sensor Range Installation</h4>
+        </li>
+        <hr>
+        <h4>Cable Lay, Shore Endings, & Sensor Range Installation</h4>
+        <li>
           <p>
-              IDC has been and continues to be involved in cable installation 
-              project for civilian projects going back 25 years. IDC has been 
-              continuously providing for all aspects of submarine cable installation, 
-              shore endings, and sensor ranges for the United States Naval Research 
-              Community.
-          </p>
-          <ul>
+            IDC has been and continues to be involved in cable installation
+            project for civilian projects going back 25 years. IDC has been
+            continuously providing for all aspects of submarine cable installation,
+            shore endings, and sensor ranges for the United States Naval Research
+            Community.
+            <!-- <ol>
             <li>Range Array refurbishments.</li>
             <li>Mooring Buoy inspections, recoveries, and installations.</li>
             <li>Vessel Mooring, Great Stirrup Cay, and Green Cay.</li>
             <li>Cable landings Great Stirrup.</li>
-            <li>Direction Drilling support and cable installs for Boca Raton 9 
+            <li>Direction Drilling support and cable installs for Boca Raton 9
               conduits, 4 cables.</li>
-            <li>Direction Drilling support and cable installs for Hollywood Beach 
+            <li>Direction Drilling support and cable installs for Hollywood Beach
               2 conduits, 2 cables.</li>
-            <li>SFOMC cable repairs, splice support, cable lay, sensor installation 
+            <li>SFOMC cable repairs, splice support, cable lay, sensor installation
               and maintenance including environmental compliance from 1992 to the present.
-              </li>
-          </ul>
-        </div>
-      </section>
+            </li>
+          </ol> -->
+          </p>
+
+
+
+
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
 </body>
 <script src="../assets/javascript/app.js" type="text/javascript"></script>
+
 </html>

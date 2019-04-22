@@ -46,3 +46,14 @@ function header() {
   $("header").css("opacity", "1");
 }
 
+function openPicture(src){
+var imageScreen = document.querySelector("#image-page");
+ var imageSrc = src;
+ var imageDisplay = document.querySelector("#open-img");
+ imageScreen.style.display = "block";
+ imageDisplay.src = imageSrc;
+}
+
+function closePicture(){
+  document.getElementById("image-page").style.display = "none";
+}
