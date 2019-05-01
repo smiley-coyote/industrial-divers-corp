@@ -232,10 +232,12 @@ header nav .services-nav:hover .service-tab{
 	header nav {
 		justify-content: center;
 		width: 100vw;
+		font-size: 15px;
 	}
 
 	header h2 {
 		margin-bottom: 15px;
+		font-size: 20px;
 	}
 }
 
@@ -430,8 +432,11 @@ header nav .services-nav:hover .service-tab{
 }
 
 @media (max-width: 800px){
+	.organizations .grid li{
+		flex-basis: 100%;
+	}
 	.organizations .grid img {
-		height: 70px;
+		height: 80px;
 	}
 }
 
@@ -565,7 +570,7 @@ footer p {
 
 @media (max-width: 800px){
 	footer p{
-		font-size: 12px;
+		font-size: 10px;
 	}
 }
 
