@@ -412,17 +412,27 @@ header nav .services-nav:hover .service-tab{
 	margin: 80px 0 40px 0;
 }
 
-.organizations .logos {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
+.organizations .grid li{
+	padding: 25px;
+	flex-basis: 18%;
+	text-align: center;
 }
 
-.organizations .logos img{
+.organizations .grid img{
 	width: auto;
-	height: 130px;
+	height: 100px;
+}
+
+@media (max-width: 1000px){
+	.organizations .grid {
+		flex-basis: 33.3%;
+	}
+}
+
+@media (max-width: 800px){
+	.organizations .grid img {
+		height: 70px;
+	}
 }
 
 
@@ -468,13 +478,42 @@ header nav .services-nav:hover .service-tab{
 	flex: 1;
 }
 
+.contact .grid li {
+	padding: 50px;
+	flex-basis: 33.3%;
+	text-align: center;
+}
+
+.contact .grid li i {
+	color: #8c9eff;
+}
+
+.contact .grid li h4 {
+	font-size: 20px;
+	margin: 25px 0;
+}
+
+.contact .grid li p {
+
+	line-height: 1.2;
+}
+
 @media (max-width: 1000px) {
 	.contact form input {
 		flex-basis: 100%;
 		margin: 0 0 20px 0;
 	}
+
+	.contact .grid li {
+		flex-basis: 50%;
+	}
 }
 
+@media (max-width: 800px) {
+	.contact .grid li {
+		flex-basis: 100%;
+	}
+}
 /*Footer Section*/
 
 footer {
@@ -503,7 +542,6 @@ footer ul li {
 }
 
 footer p {
-	text-transform: uppercase;
 	font-size: 14px;
 	opacity: 0.6;
 	align-self: center;
@@ -524,6 +562,12 @@ footer p {
 		margin: 0 8px;
 	}
 } 
+
+@media (max-width: 800px){
+	footer p{
+		font-size: 12px;
+	}
+}
 
 /* About Section */
 
@@ -555,7 +599,11 @@ margin-top: 50px;
 	border: 1px solid black;
 }
 
-
+@media (max-width: 1000px){
+	.about-content-area{
+		width: 90%;
+	}
+}
 @media (max-width: 800px) {
 	.about {
 		min-height: 600px;
@@ -571,6 +619,10 @@ margin-top: 50px;
 
 	.about a.btn {
 		padding: 15px 40px;
+	}
+
+	.about-content-area{
+		width: 100%;
 	}
 }
 
@@ -676,13 +728,18 @@ flex-direction: row;
 	background-color: #80a3db;
 }
 
-.contact-page-content-area{
-	flex-wrap: wrap;
-	padding: 25px;
+.contact-page-window{
+padding: 25px;
 	width: 75%;
 	background-color: rgba(236, 236, 236, 0.815);
 margin-top: 50px;
 	border: 1px solid black;
+}
+
+
+
+.contact-page-window li{
+	list-style: none;
 }
 
 /* Employment */
@@ -702,4 +759,19 @@ margin-top: 50px;
 	background-color: rgba(236, 236, 236, 0.815);
 margin-top: 50px;
 	border: 1px solid black;
+}
+
+@media (max-width: 1000px){
+
+	.employment-page-content-area{
+		margin-top: 100px;
+		width: 90%;
+	}
+}
+@media (max-width: 800px){
+
+
+	.employment-page-content-area{
+		width: 100%;
+	}
 }
