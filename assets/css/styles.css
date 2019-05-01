@@ -232,12 +232,30 @@ header nav .services-nav:hover .service-tab{
 	header nav {
 		justify-content: center;
 		width: 100vw;
-		font-size: 15px;
+		font-size: 18px;
 	}
 
 	header h2 {
 		margin-bottom: 15px;
 		font-size: 20px;
+	}
+}
+
+@media (max-width: 420px){
+	header nav{
+		font-size: 14px;
+	}
+	header h2 {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 360px){
+	header nav{
+		font-size: 10px;
+	}
+	header h2 {
+		font-size: 16px;
 	}
 }
 
