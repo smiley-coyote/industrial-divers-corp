@@ -160,11 +160,12 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 35px 100px 0;
+	padding: 35px 100px 35px;
 	animation: 1s fadein 0.5s forwards;
 	opacity: 0;
 	color: #fff;
 	z-index: 1;
+	background-color: rgba(168, 168, 168, 0.541);
 }
 
 
@@ -191,31 +192,40 @@ header nav li {
 	
 }
 
-header nav .services-nav .service-tab a {
+header nav .services-nav .services-tab a {
 	color: rgb(233, 233, 233);
 }
 
 
-header nav .services-nav .service-tab a:hover{
+header nav .services-nav .services-tab a:hover{
 	color: #fff;
 }
 
-.service-tab {
+.services-tab {
 	position: absolute;
-	height: 100px;
-	background-color: rgba(201, 201, 201, 0.514);
+	background-color: rgb(255, 255, 255);
 	padding: 10px;
 	display: none;
 	border-radius: 3px;
+	border: 1px solid black;
 }
 
-.service-tab li{
+.services-tab li{
 	padding: 5px;
+	color: black;
+	text-shadow: none;
+
 }
 
-header nav .services-nav:hover .service-tab{
+.services-tab li:hover{
+	color: rgb(150, 150, 150);
+}
+
+header nav .services-nav:hover .services-tab{
 	display: block;
 }
+
+
 
 @media (max-width: 900px){
 	header nav {
