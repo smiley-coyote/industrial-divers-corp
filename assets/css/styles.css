@@ -283,7 +283,7 @@ header nav .services-nav:hover .services-tab{
 	}
 }
 
-@media (max-width: 360px){
+@media (max-width: 375px){
 	header nav{
 		font-size: 10px;
 	}
@@ -626,6 +626,12 @@ footer p {
 @media (max-width: 800px){
 	footer p{
 		font-size: 10px;
+	}
+}
+
+@media (max-width: 375px){
+	footer p{
+		font-size: 9px;
 	}
 }
 
