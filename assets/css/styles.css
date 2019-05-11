@@ -189,7 +189,14 @@ header nav {
 header nav li {
 	margin: 0 15px;
 	padding-bottom: 5px;
-	
+}
+
+header nav li a {
+	padding-bottom: 10px;
+}
+
+header nav li a:hover {
+	border-bottom: 2px solid black;
 }
 
 header nav .services-nav .services-tab a {
@@ -204,10 +211,10 @@ header nav .services-nav .services-tab a:hover{
 .services-tab {
 	position: absolute;
 	background-color: rgb(255, 255, 255);
-	padding: 10px;
 	display: none;
 	border-radius: 3px;
 	border: 1px solid black;
+	overflow: hidden;
 }
 
 .services-tab li{
@@ -223,6 +230,17 @@ header nav .services-nav .services-tab a:hover{
 
 header nav .services-nav:hover .services-tab{
 	display: block;
+	animation: .3s reveal forwards;
+}
+
+@keyframes reveal {
+	0%{
+		height: 0px;
+	}
+	100%{
+		padding: 10px;
+		height: 110px;
+	}
 }
 
 
@@ -351,6 +369,10 @@ header nav .services-nav:hover .services-tab{
 
 .hero a.btn {
 	padding: 20px 46px;
+}
+
+.hero a.btn:hover {
+	opacity: .85;
 }
 
 #hero-content-area {
