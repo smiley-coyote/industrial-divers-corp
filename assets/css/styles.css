@@ -170,7 +170,7 @@ header {
 	opacity: 0;
 	color: #fff;
 	z-index: 1;
-	background-color: rgba(168, 168, 168, 0.541);
+	background-color: rgba(168, 168, 168, 0.589);
 }
 
 
@@ -240,11 +240,11 @@ header nav .services-nav:hover .services-tab{
 
 @keyframes reveal {
 	0%{
-		height: 0px;
+		height: 0%;
 	}
 	100%{
-		padding: 10px;
-		height: 110px;
+		padding: 8px;
+		height: 100%;
 	}
 }
 
@@ -528,6 +528,10 @@ header nav .services-nav:hover .services-tab{
 
 .contact form .btn {
 	padding: 18px 42px;
+}
+
+.contact form .btn:hover{
+	opacity: .85;
 }
 
 .contact form input {
@@ -816,6 +820,10 @@ margin-top: 50px;
 	background-image: url("../img/divers22.jpg");
 	background-size: cover;
 	background-color: #80a3db;
+}
+
+.employment-page a{
+	color: blue;
 }
 
 .employment-page-content-area{
