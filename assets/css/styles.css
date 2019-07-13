@@ -204,9 +204,9 @@ header .logo a {
 }
 
 header .logo img {
-	width: 180px;
-	height: auto;
-	background-color: white;
+	width: 192px;
+	height: 180px;
+	background-color: rgba(252, 252, 252, 0.5);
 }
 
 header .logo h2 {
