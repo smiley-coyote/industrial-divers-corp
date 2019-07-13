@@ -369,12 +369,17 @@ header {
 }
 
 @media (max-width: 320px){
+
+	header .logo {
+		width: 315px;
+	}
 	header nav{
 		font-size: 15px;
 	}
 	header .logo h2 {
 		padding-top: 10px;
-		font-size: 17px;
+		font-size: 22px;
+	
 	}
 
 	header nav li {
