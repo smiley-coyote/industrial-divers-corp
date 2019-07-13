@@ -190,7 +190,7 @@ header {
 }
 
 header .logo {
-	width: 775px;
+	width: 795px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -198,8 +198,10 @@ header .logo {
 }
 
 header .logo a {
-	padding: 0;
-	margin: 0;
+	opacity: .75;
+}
+
+header .logo a:hover{
 	opacity: 1;
 }
 
@@ -252,7 +254,7 @@ header nav .services-nav .services-tab {
 	border: 1px solid black;
 	overflow: hidden;
 	font-size: 14px;
-	width: 150px;
+	width: auto;
 }
 
 header nav .services-nav .services-tab li{
@@ -271,12 +273,12 @@ header nav .services-nav:hover .services-tab{
 
 @keyframes reveal {
 	0%{
-		height: 30%;
+		height: 50px;
 		opacity: 0;
 	}
 	100%{
-		padding: 8px;
-		height: 100%;
+		padding: 0px 15px 0px 10px;
+		height: 150px;
 		opacity: 1;
 	}
 }
@@ -355,21 +357,33 @@ header {
 }
 
 @media (max-width: 420px){
-	header nav{
-		font-size: 18px;
-	}
-	header h2 {
+	header .logo h2 {
+		padding-top: 10px;
 		font-size: 20px;
 	}
 
+	header nav li {
+		font-size: 15px;
+		}
+
 }
 
-@media (max-width: 375px){
-
-	header h2 {
-		font-size: 16px;
+@media (max-width: 320px){
+	header nav{
+		font-size: 15px;
 	}
+	header .logo h2 {
+		padding-top: 10px;
+		font-size: 17px;
+	}
+
+	header nav li {
+		font-size: 12px;
+		}
+
 }
+
+
 
 /*Hero Styles*/
 
@@ -487,7 +501,6 @@ header {
 
 	.hero {
 		min-height: 600px;
-		justify-content: flex-end;
 	}
 
 	.hero h1 {
@@ -889,6 +902,14 @@ flex-direction: row;
 	background-color: #80a3db;
 }
 
+.contact-page h4 {
+	text-decoration: underline;
+}
+
+.contact-page .contact-page-window ul {
+	list-style-type:none;
+}
+
 .contact-page a {
 	color: black;
 }
@@ -901,10 +922,22 @@ margin-top: 100px;
 	border: 1px solid black;
 }
 
+@media (max-width: 1000px) {
+	.contact-page-window{
+		margin-top: 175px;
+	}
+}
+
+@media (max-width: 800px){
+
+	.contact-page-window{
+		width: 100%;
+	}
 
 
 .contact-page-window li{
 	list-style: none;
+}
 }
 
 /* Employment */
