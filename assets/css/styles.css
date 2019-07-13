@@ -351,7 +351,7 @@ header {
 	}
 
 	header .logo img {
-		width: 100px;
+		width: 150px;
 		height: auto;
 	}
 }
@@ -780,7 +780,7 @@ footer p {
 @media (max-width: 1000px){
 	.about-content-area{
 		width: 90%;
-		margin-top: 175px;
+		margin-top: 210px;
 	}
 }
 @media (max-width: 800px) {
@@ -878,7 +878,7 @@ flex-direction: row;
 @media (max-width: 1000px) {
 	.services-content{
 		width: 90%;
-		margin-top: 175px;
+		margin-top: 210px;
 	}
 	.services-content ul li{
 		flex-direction: column;
@@ -929,7 +929,7 @@ margin-top: 100px;
 
 @media (max-width: 1000px) {
 	.contact-page-window{
-		margin-top: 175px;
+		margin-top: 210px;
 	}
 }
 
@@ -971,7 +971,7 @@ margin-top: 100px;
 @media (max-width: 1000px){
 
 	.employment-page-content-area{
-		margin-top: 175px;
+		margin-top: 210px;
 		width: 90%;
 	}
 }
