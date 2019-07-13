@@ -289,6 +289,7 @@ header nav .services-nav:hover .services-tab{
 
 	header .logo {
 		width: 700px;
+		height: auto;
 	}
 	header .logo h2 {
 		font-size: 2.4em;
@@ -302,6 +303,7 @@ header nav .services-nav:hover .services-tab{
 
 	header .logo {
 		width: 680px;
+		height: auto;
 	}
 	header nav li {
 		font-size: 14px;
@@ -348,6 +350,7 @@ header {
 
 	header .logo img {
 		width: 100px;
+		height: auto;
 	}
 }
 
@@ -594,6 +597,10 @@ header {
 
 /*Contact Section*/
 
+.contact a {
+	color: black;
+}
+
 .contact form {
 	display: flex;
 	align-items: center;
@@ -676,10 +683,8 @@ footer {
 	padding: 20px 0;
 }
 
-footer .contact-list {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+footer a {
+	opacity: .85;
 }
 
 footer ul {
@@ -750,13 +755,14 @@ footer p {
 	padding: 25px;
 	width: 75%;
 	background-color: rgba(236, 236, 236, 0.815);
-margin-top: 100px;
+	margin-top: 100px;
 	border: 1px solid black;
 }
 
 @media (max-width: 1000px){
 	.about-content-area{
 		width: 90%;
+		margin-top: 175px;
 	}
 }
 @media (max-width: 800px) {
@@ -854,7 +860,7 @@ flex-direction: row;
 @media (max-width: 1000px) {
 	.services-content{
 		width: 90%;
-		margin-top: 100px;
+		margin-top: 175px;
 	}
 	.services-content ul li{
 		flex-direction: column;
@@ -881,6 +887,10 @@ flex-direction: row;
 	background-image: url("../img/divers21.jpg");
 	background-size: cover;
 	background-color: #80a3db;
+}
+
+.contact-page a {
+	color: black;
 }
 
 .contact-page-window{
@@ -923,12 +933,14 @@ margin-top: 100px;
 @media (max-width: 1000px){
 
 	.employment-page-content-area{
-		margin-top: 100px;
+		margin-top: 175px;
 		width: 90%;
 	}
 }
 @media (max-width: 800px){
-
+.employment-page .employment-page-content-area .title {
+	font-size: 1.5em;
+}
 
 	.employment-page-content-area{
 		width: 100%;
