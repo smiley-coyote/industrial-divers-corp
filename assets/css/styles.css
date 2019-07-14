@@ -296,17 +296,6 @@ header nav .mobile-nav:hover {
 	cursor: pointer;
 }
 
-
-
-header nav .mobile-nav:hover .mobile-nav-hidden{
-	display: block;
-	animation: .3s reveal forwards;
-}
-
-header nav .mobile-nav:hover .mobile-nav-hidden li {
-	padding: 2px;
-}
-
 header nav .mobile-nav .mobile-nav-hidden .mobile-services-nav .mobile-services-tab {
 	display: none;
 }
@@ -433,6 +422,7 @@ header {
 	header .logo h2 {
 		padding-top: 10px;
 		font-size: 22px;
+		white-space: nowrap;
 	}
 
 	header nav li {

@@ -57,3 +57,15 @@ function openPicture(src) {
 function closePicture() {
   document.getElementById("image-page").style.display = "none";
 }
+
+function mobileNav(){
+  if(document.getElementById("menu").innerHTML === "Menu"){
+    document.getElementById("menu").innerHTML = "Exit";
+    document.getElementById("mobile-hidden").style.display = "block";
+    document.getElementById("mobile-hidden").style.animation = ".3s reveal forwards";
+  } else if(document.getElementById("menu").innerHTML === "Exit"){
+    document.getElementById("menu").innerHTML = "Menu";
+    document.getElementById("mobile-hidden").style.display = "none";
+  }
+
+}

@@ -19,71 +19,71 @@
       <h2><a href="../index.html">Industrial Divers Corporation</a></h2>
     </div>
     <nav>
-        <div class="desktop-nav">
-          <li class="services-nav">
+      <div class="desktop-nav">
+        <li class="services-nav">
+          <a href="#services">Services</a>
+          <ul class="services-tab">
+            <a href="services/construction.html">
+              <li>Construction</li>
+            </a>
+            <a href="services/dredging.html">
+              <li>Dredging</li>
+            </a>
+            <a href="services/environmental.html">
+              <li>Environmental</li>
+            </a>
+          </ul>
+        </li>
+        <li><a class='link-underline' href="about.html">About Us</a></li>
+        <li><a class='link-underline' href="employment.html">Employment</a></li>
+        <li><a class='link-underline' href="contact.html">Contact</a></li>
+      </div>
+      <div class="mobile-nav">
+        <li id="menu" onClick="mobileNav()">Menu</li>
+        <div id="mobile-hidden" class="mobile-nav-hidden">
+          <!-- services tab -->
+          <li class="mobile-services-nav">
             <a href="#services">Services</a>
-            <ul class="services-tab">
-              <a href="services/construction.html">
+            <ul class="mobile-services-tab">
+              <a href="construction.html">
                 <li>Construction</li>
               </a>
-              <a href="services/dredging.html">
+              <a href="dredging.html">
                 <li>Dredging</li>
               </a>
-              <a href="services/environmental.html">
+              <a href="environmental.html">
                 <li>Environmental</li>
               </a>
             </ul>
           </li>
-          <li><a class='link-underline' href="about.html">About Us</a></li>
-          <li><a class='link-underline' href="employment.html">Employment</a></li>
-          <li><a class='link-underline' href="contact.html">Contact</a></li>
+
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../employment.html">Employment</a></li>
+          <li><a href="../contact.html">Contact</a></li>
         </div>
-        <div class="mobile-nav">
-          <li>menu</li>
-          <div class="mobile-nav-hidden">
-            <!-- services tab -->
-            <li class="mobile-services-nav">
-              <a href="#services">Services</a>
-              <ul class="mobile-services-tab">
-                  <a href="construction.html">
-                    <li>Construction</li>
-                  </a>
-                  <a href="dredging.html">
-                    <li>Dredging</li>
-                  </a>
-                  <a href="environmental.html">
-                    <li>Environmental</li>
-                  </a>
-                </ul>
-            </li>
-            
-            <li><a href="../about.html">About Us</a></li>
-            <li><a href="../employment.html">Employment</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-          </div>
-        </div>
-      </nav>
+      </div>
+    </nav>
   </header>
 
 
   <section class="services-page">
- 
-      <div id="image-page">
-        <div class="image-page-header">
+
+    <div id="image-page">
+      <div class="image-page-header">
         <div onclick=closePicture() class="close-container">X</div>
       </div>
-        <img id="open-img" src="" />
-      </div>
+      <img id="open-img" src="" />
+    </div>
     <div id="background-image" style="background-image: url(assets/img/divers8.jpg);"></div>
 
     <div class="services-content">
-        <h3 class="title">Construction Services</h3>
-        <hr>
+      <h3 class="title">Construction Services</h3>
+      <hr>
       <ul>
         <h4>Power Plant Services</h4>
         <li>
-            <a href="#image-page">
-          <img onclick=openPicture(this.src) src="../assets/img/divers5.jpg" />
+          <a href="#image-page">
+            <img onclick=openPicture(this.src) src="../assets/img/divers5.jpg" />
           </a>
           <p>
             IDC provides diving services to many of the Florida Power &
@@ -103,8 +103,8 @@
         <h4>Cofferdam and Foundation Specialist</h4>
         <li>
           <a href="#image-page">
-          <img onclick=openPicture(this.src) src="../assets/img/divers2.jpg" />
-        </a>
+            <img onclick=openPicture(this.src) src="../assets/img/divers2.jpg" />
+          </a>
           <p>
             IDC performs multiple cofferdam projects every year. Cofferdam
             preparation has become an IDC specialty. IDC assists our customers
