@@ -385,7 +385,7 @@ header nav .mobile-nav .mobile-nav-hidden .mobile-services-nav .mobile-services-
 		width: 100vw;
 	}
 	header nav li {
-		font-size: 18px;
+		font-size: 20px;
 		}
 }
 
@@ -398,7 +398,6 @@ header {
 
 	header nav {
 		justify-content: center;
-	
 		font-size: 18px;
 		margin-top: 15px;
 	}
@@ -410,41 +409,31 @@ header {
 
 	header .logo h2 {
 		font-size: 1.8em;
+		white-space: nowrap;
 	}
 
 	header .logo img {
 		width: 150px;
 		height: auto;
 	}
+
 }
 
 @media (max-width: 420px){
 	header .logo h2 {
 		padding-top: 10px;
 		font-size: 22px;
-		white-space: nowrap;
 	}
-
-	header nav li {
-		font-size: 15px;
-		}
+	header nav li{
+		font-size: 18px;
+	}
 
 }
 
 @media (max-width: 320px){
-
-	header nav{
-		font-size: 15px;
-	}
 	header .logo h2 {
 		padding-top: 18px;
-
-	
 	}
-
-	header nav li {
-		font-size: 12px;
-		}
 
 }
 
