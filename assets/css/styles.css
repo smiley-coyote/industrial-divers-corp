@@ -217,37 +217,39 @@ header .logo h2 {
 	text-shadow: 2px 2px rgb(44, 44, 44);
 }
 
-header nav {
+/* header desktop nav */
+
+header nav .desktop-nav{
 	display: flex;
 	text-shadow: 1px 1px rgb(44, 44, 44);
 }
 
-header nav li {
+header nav .desktop-nav li {
 margin: 0;
 padding: 0px;
 font-size: 1.2em;
 }
 
-header nav li a{
+header nav .desktop-nav li a{
 	margin: 0;
 	padding: 10px;
 	}
 
-header nav li:not(:first-child):before {
+header nav .desktop-nav li:not(:first-child):before {
 	content: " | ";
 	color: rgb(143, 143, 143);
 }
 
-header nav .services-nav .services-tab a {
+header nav .desktop-nav .services-nav .services-tab a {
 	color: rgb(233, 233, 233);
 }
 
 
-header nav .services-nav .services-tab a:hover{
+header nav .desktop-nav .services-nav .services-tab a:hover{
 	color: #fff;
 }
 
-header nav .services-nav .services-tab {
+header nav .desktop-nav .services-nav .services-tab {
 	position: absolute;
 	background-color: rgb(255, 255, 255);
 	display: none;
@@ -258,19 +260,69 @@ header nav .services-nav .services-tab {
 	width: auto;
 }
 
-header nav .services-nav .services-tab li{
+header nav .desktop-nav .services-nav .services-tab li{
 	color: black;
 	text-shadow: none;
 }
 
-header nav .services-nav .services-tab li:hover{
+header nav .desktop-nav .services-nav .services-tab li:hover{
 	color: rgb(150, 150, 150);
 }
 
-header nav .services-nav:hover .services-tab{
+header nav .desktop-nav .services-nav:hover .services-tab{
 	display: block;
 	animation: .3s reveal forwards;
 }
+
+/* header mobile nav */
+
+header nav .mobile-nav {
+	text-align: center;
+	width: 100%;
+	display: none;
+	text-shadow: 1px 1px rgb(44, 44, 44);
+}
+
+header nav .mobile-nav .mobile-nav-hidden {
+	position: relative;
+	display: none;
+	width: 100%;
+	height: 50vh;
+	background-color: rgba(218, 218, 218, 0.637);
+	
+}
+
+header nav .mobile-nav:hover {
+	cursor: pointer;
+}
+
+
+
+header nav .mobile-nav:hover .mobile-nav-hidden{
+	display: block;
+	animation: .3s reveal forwards;
+}
+
+header nav .mobile-nav:hover .mobile-nav-hidden li {
+	padding: 2px;
+}
+
+header nav .mobile-nav .mobile-nav-hidden .mobile-services-nav .mobile-services-tab {
+	display: none;
+}
+
+header nav .mobile-nav .mobile-nav-hidden .mobile-services-nav:hover .mobile-services-tab{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	animation: .3s reveal2 forwards;
+}
+
+
+header nav .mobile-nav .mobile-nav-hidden .mobile-services-nav .mobile-services-tab li {
+	padding: 5px;
+}
+
 
 @keyframes reveal {
 	0%{
@@ -280,6 +332,15 @@ header nav .services-nav:hover .services-tab{
 	100%{
 		padding: 0px 15px 0px 10px;
 		height: 150px;
+		opacity: 1;
+	}
+}
+
+@keyframes reveal2 {
+	0%{
+		opacity: 0;
+	}
+	100%{
 		opacity: 1;
 	}
 }
@@ -300,6 +361,7 @@ header nav .services-nav:hover .services-tab{
 }
 
 @media (max-width: 1170px){
+
 	header .logo h2 {
 		font-size: 2.2em;
 	}
@@ -308,20 +370,30 @@ header nav .services-nav:hover .services-tab{
 		width: 680px;
 		height: auto;
 	}
-	header nav li {
+	header nav .desktop-nav li {
 		font-size: 14px;
 		}
-
 	
 }
 
+
+
 @media (max-width: 1000px){
+	header nav .desktop-nav {
+		display: none;
+	}
+
+
+	header nav .mobile-nav {
+		display: block;
+	}
 	header {
 		padding-bottom: 20px;
 		flex-direction: column;
 	}
 	header nav {
 		margin-top: 20px;
+		width: 100vw;
 	}
 	header nav li {
 		font-size: 18px;
@@ -337,14 +409,14 @@ header {
 
 	header nav {
 		justify-content: center;
-		width: 100vw;
+	
 		font-size: 18px;
 		margin-top: 15px;
 	}
 
 	header .logo {
 		flex-direction: column;
-		width: 100vh;
+		width: 100%;
 	}
 
 	header .logo h2 {
