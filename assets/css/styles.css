@@ -786,13 +786,13 @@ footer p {
 
 @media (max-width: 800px){
 	footer p{
-		font-size: 10px;
+		font-size: 14px;
 	}
 }
 
 @media (max-width: 375px){
 	footer p{
-		font-size: 9px;
+		font-size: 13px;
 	}
 }
 
