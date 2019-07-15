@@ -24,6 +24,8 @@ $(document).ready(function () {
 
 });
 
+// picture slide show
+
 function pageStart() {
   var slideNumber = 0;
   var slides = setInterval(slideShow, 4000);
@@ -46,6 +48,8 @@ function header() {
   $("header").css("opacity", "1");
 }
 
+// Open images in a seperate window
+
 function openPicture(src) {
   var imageScreen = document.querySelector("#image-page");
   var imageSrc = src;
@@ -54,9 +58,13 @@ function openPicture(src) {
   imageDisplay.src = imageSrc;
 }
 
+// Close window
+
 function closePicture() {
   document.getElementById("image-page").style.display = "none";
 }
+
+// Mobile nav
 
 function mobileNav(){
   if(document.getElementById("menu").innerHTML === "Menu"){
