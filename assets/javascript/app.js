@@ -70,7 +70,7 @@ function mobileNav(){
   if(document.getElementById("menu").innerHTML === "Menu"){
     document.getElementById("menu").innerHTML = "Exit";
     document.getElementById("mobile-hidden").style.display = "block";
-    document.getElementById("mobile-hidden").style.animation = ".3s reveal forwards";
+    document.getElementById("mobile-hidden").style.animation = ".3s reveal3 forwards";
   } else if(document.getElementById("menu").innerHTML === "Exit"){
     document.getElementById("menu").innerHTML = "Menu";
     document.getElementById("mobile-hidden").style.display = "none";

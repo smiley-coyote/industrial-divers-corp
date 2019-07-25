@@ -49,10 +49,10 @@ section {
 }
 
 section:not(.hero):nth-child(even) {
-	background-color: #f8f8f8;
+	background-color: #ffffff;
 }
 section:not(.hero):nth-child(odd) {
-	background-color: #dddddd;
+	background-color: #eeeeee;
 }
 
 .grid {
@@ -287,9 +287,7 @@ header nav .mobile-nav .mobile-nav-hidden {
 	position: relative;
 	display: none;
 	width: 100%;
-	height: 50vh;
 	background-color: rgba(218, 218, 218, 0.637);
-	
 }
 
 header nav .mobile-nav:hover {
@@ -298,30 +296,39 @@ header nav .mobile-nav:hover {
 
 header nav .mobile-nav .mobile-nav-hidden .mobile-services-nav .mobile-services-tab {
 	display: none;
+	background-color: rgb(235, 235, 235);
+}
+
+header nav .mobile-nav .mobile-nav-hidden .mobile-services-nav .mobile-services-tab .divider {
+	color: rgb(167, 167, 167);
 }
 
 header nav .mobile-nav .mobile-nav-hidden .mobile-services-nav:hover .mobile-services-tab{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
 	animation: .3s reveal2 forwards;
 }
 
 
 header nav .mobile-nav .mobile-nav-hidden .mobile-services-nav .mobile-services-tab li {
 	padding: 5px;
+	color: black;
+	text-shadow: none;
 }
 
 
 @keyframes reveal {
 	0%{
-		height: 50px;
 		opacity: 0;
+		height: 0%;
 	}
 	100%{
 		padding: 0px 15px 0px 10px;
-		height: 150px;
 		opacity: 1;
+		height: 100%;
 	}
 }
 
@@ -331,6 +338,18 @@ header nav .mobile-nav .mobile-nav-hidden .mobile-services-nav .mobile-services-
 	}
 	100%{
 		opacity: 1;
+	}
+}
+
+@keyframes reveal3 {
+	0%{
+		opacity: 0;
+		height: 0%;
+	}
+	100%{
+		padding: 0px 15px 0px 10px;
+		opacity: 1;
+		height: 100%;
 	}
 }
 
@@ -854,19 +873,47 @@ footer p {
 	}
 }
 
+/* Services Nav */
+
+#services-nav {
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#services-nav p {
+	text-align: center;
+	font-weight: bold;
+	width: 250px;
+	line-height: 20px;
+}
+
+#services-nav img {
+	width: 200px;
+	height: auto;
+}
+
+#services-nav li {
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+	opacity: .85;
+}
+
 /* Services Page */
 
 .services-page {
 	position: relative;
 	min-height: 100vh;
-	background-image: url("../img/divers4.jpg");
+	background-image: url("../img/divers20.jpg");
 	background-size: cover;
 	background-color: #80a3db;
-
 }
 
-
 .services-content {	
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -877,50 +924,52 @@ footer p {
 	border: 1px solid black;
 }
 
-.services-content ul {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	flex-direction: column;
-	align-items: center;
+.services-content img {
+	width: 50%;
+	height: auto;
+	margin-bottom: 25px;
 }
 
-.services-content ul li{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin: 0 0 25px 0;
-	padding: 0;
-	list-style: none;
+.services-content h3 {
+	text-align: center;
+	margin: 20px 0px;
 }
 
-.services-content ul li p{
+.services-content p {
 	text-align: left;
 }
 
-.services-content ul li{
-	display: flex;
-flex-direction: row;
-	justify-content: space-between;
+
+.services-content ul {
+	width: 75%;
+	list-style: circle;
+	text-align: left;
 }
 
-.services-content ul li a {
-	order: 1;
+.services-content a {
+	color: rgb(0, 0, 0);
 }
 
-.services-content ul li a img {
-	width: 200px;
-	height: 150px;
+.services-content .back-link {
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	font-size: 20px;
 }
 
-.services-content ul li a img:hover{
-	cursor: pointer;
+.services-content .back-link a {
+	color: black;
+	
 }
 
+.services-info {
+	display: none;
+	opacity: 0;
+}
 
-.services-content h4{
-	margin-bottom: 20px;
-	text-align: center;
+.services-info img{
+	max-width: 65%;
+	height: auto;
 }
 
 
@@ -929,20 +978,30 @@ flex-direction: row;
 		width: 90%;
 		margin-top: 210px;
 	}
-	.services-content ul li{
-		flex-direction: column;
-		align-items: center;
-	}
-	.services-content ul li img {
-		order: 0;
-		margin: 10px 0 20px 0;
-	}
 }
 
 @media (max-width: 800px){
 
 	.services-content{
 		width: 100%;
+	}
+	.services-content img {
+		width: 65%;
+	}
+}
+
+@media (max-width: 600px){
+	.services-content h3 {
+		margin-top: 25px;
+	}
+	.services-content img {
+		width: 90%;
+	}
+}
+
+@keyframes fadeIn{
+	100%{
+		opacity: 1;
 	}
 }
 
