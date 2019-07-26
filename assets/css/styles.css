@@ -274,6 +274,18 @@ header nav .desktop-nav .services-nav:hover .services-tab{
 	animation: .3s reveal forwards;
 }
 
+@keyframes reveal {
+	0%{
+		opacity: 0;
+		height: 0px;
+	}
+	100%{
+		padding: 0px 15px 0px 10px;
+		opacity: 1;
+		height: 130%;
+	}
+}
+
 /* header mobile nav */
 
 header nav .mobile-nav {
@@ -319,19 +331,6 @@ header nav .mobile-nav .mobile-nav-hidden .mobile-services-nav .mobile-services-
 	text-shadow: none;
 }
 
-
-@keyframes reveal {
-	0%{
-		opacity: 0;
-		height: 0%;
-	}
-	100%{
-		padding: 0px 15px 0px 10px;
-		opacity: 1;
-		height: 100%;
-	}
-}
-
 @keyframes reveal2 {
 	0%{
 		opacity: 0;
@@ -349,7 +348,7 @@ header nav .mobile-nav .mobile-nav-hidden .mobile-services-nav .mobile-services-
 	100%{
 		padding: 0px 15px 0px 10px;
 		opacity: 1;
-		height: 100%;
+		height: 130%;
 	}
 }
 
@@ -892,14 +891,44 @@ footer p {
 
 #services-nav img {
 	width: 200px;
-	height: auto;
+	height: 150px;
+	object-fit: cover;
 }
 
 #services-nav li {
 	display: inline-block;
 	text-align: center;
 	margin: 0 auto;
-	opacity: .85;
+	opacity: .80;
+}
+
+#services-nav li:hover {
+	opacity: 1;
+}
+
+#services-nav a:nth-child(1) {
+	animation: enterScreen .5s forwards;
+	opacity: 0;
+}
+
+#services-nav a:nth-child(2) {
+	animation: enterScreen .5s .1s forwards;
+	opacity: 0;
+}
+
+#services-nav a:nth-child(3) {
+	animation: enterScreen .5s .2s forwards;
+	opacity: 0;
+}
+
+@keyframes enterScreen {
+	0%{
+		transform: scale(1.1);
+	}
+	100%{
+		opacity: .85;
+		transform: scale(1);
+	}
 }
 
 /* Services Page */
@@ -948,6 +977,14 @@ footer p {
 
 .services-content a {
 	color: rgb(0, 0, 0);
+	opacity: 1;
+}
+
+.services-content a img{
+	position: relative;
+	display: block;
+	opacity: 1;
+	margin: 0 auto 20px;
 }
 
 .services-content .back-link {
