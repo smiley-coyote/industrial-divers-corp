@@ -31,7 +31,7 @@ function pageStart() {
   var slides = setInterval(slideShow, 4000);
   slides;
   function slideShow() {
-    if (slideNumber < 3) {
+    if (slideNumber < 4) {
       slideNumber++;
       var picId = "background-image" + slideNumber;
       document.getElementById(picId).style.animation = "fadeOut 1s linear forwards";
@@ -76,4 +76,18 @@ function mobileNav(){
     document.getElementById("mobile-hidden").style.display = "none";
   }
 
+}
+
+// image gallery
+
+const images = {
+  classinpections: [''],
+  dredging: [],
+  environmental: [],
+  heavyconstruction: [],
+  homepage: []
+}
+
+function imageGallery(page){
+  // 
 }
