@@ -72,23 +72,49 @@
   </header>
 
   <section class="services-page" style="background-image: url(../../assets/img/homepage/homepage6.jpg)">
-    <div id="background-image" style="background-image: url(../../assets/img/divers8.jpg);"></div>
+
+    <!-- image window -->
+    <div id="image-page">
+      <div class="image-page-header">
+        <div onclick=closePicture() class="close"></div>
+      </div>
+      <img id="open-img" src="" />
+    </div>
 
     <div class="services-content">
       <div class='back-link'><a href='../construction.html'><i class="fas fa-arrow-left"></i> Return</a></div>
       <h3 class="title">Power Plant Services</h3>
       <hr>
-      <p>
-          IDC provides diving services to many of the Florida Power & Light 
-          Plants. These services include; de-mineralized water tank diving, 
-          replacement and cleaning of security nets around discharge, repair 
-          and replacement of traveling water screens from top to bottom, 
-          Inspection and cleaning of intake wells, photographic and video 
-          documentation, reinforce cross beam piling by forming and pumping 
-          with concrete, diving in hot water discharge, stop log installation 
-          and sealing, new plant construction, and intake and discharge tunnel 
-          inspection.
-      </p>
+      <div class='section-gallery'>
+        <div class='column column-1'>
+          <p>
+            IDC provides diving services to many of the Florida Power & Light
+            Plants. These services include; de-mineralized water tank diving,
+            replacement and cleaning of security nets around discharge, repair
+            and replacement of traveling water screens from top to bottom,
+            Inspection and cleaning of intake wells, photographic and video
+            documentation, reinforce cross beam piling by forming and pumping
+            with concrete, diving in hot water discharge, stop log installation
+            and sealing, new plant construction, and intake and discharge tunnel
+            inspection.
+          </p>
+        </div>
+        <div class='column column-2'>
+          <div class="image-gallery">
+            <a href="#image-page">
+              <img onclick=openPicture(this.src) class="mySlides" id="image-gallery-image"
+                src='../../assets/img/heavyconstruction/powerplantservices2.JPG' />
+              <img onclick=openPicture(this.src) class="mySlides" id="image-gallery-image"
+                src='../../assets/img/heavyconstruction/powerplantservices.jpg' />
+            </a>
+            <div class="image-gallery-buttons">
+              <i onclick="plusDivs(-1)" class="fas fa-chevron-left fa-2x"></i>
+              <i onclick="plusDivs(1)" class="fas fa-chevron-right fa-2x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 

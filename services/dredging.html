@@ -55,8 +55,8 @@
                 <li>Dredging</li>
               </a>
               <a href="vesselclassinspections.html">
-                  <li>Vessel Class Inspections</li>
-                </a>
+                <li>Vessel Class Inspections</li>
+              </a>
               <a href="environmental.html">
                 <li>Environmental</li>
               </a>
@@ -73,17 +73,42 @@
 
   <section class="services-page" style="background-image: url('../assets/img/homepage/homepage6.jpg')">
 
+    <!-- image window -->
+    <div id="image-page">
+      <div class="image-page-header">
+        <div onclick=closePicture() class="close"></div>
+      </div>
+      <img id="open-img" src="" />
+    </div>
+
     <div class="services-content">
       <h3 class="title">Dredging Services</h3>
       <hr>
-      <p>
-        IDC provides diving services to several water districts in South
-        Florida. Services include visual inspections level I & II with or
-        without CCTV of storm water culverts. Removal of sediment from culverts
-        pipe and structures with diver operated dredging equipment. IDC is also
-        experienced in assisting construction companies in the installation of
-        storm water culverts and structures, water lines, & sewer lines.
-      </p>
+      <div class='section-gallery'>
+        <div class='column column-1'>
+            <p>
+                IDC provides diving services to several water districts in South
+                Florida. Services include visual inspections level I & II with or
+                without CCTV of storm water culverts. Removal of sediment from culverts
+                pipe and structures with diver operated dredging equipment. IDC is also
+                experienced in assisting construction companies in the installation of
+                storm water culverts and structures, water lines, & sewer lines.
+              </p>
+        </div>
+        <div class='column column-2'>
+          <div class='image-gallery'>
+              <a href="#image-page">
+                <img 
+                onclick=openPicture(this.src)
+                id="image-gallery-image" 
+                src='../assets/img/dredging/dredging.png'
+                />
+              </a>
+          </div>
+        </div>
+
+      </div>
+     
     </div>
   </section>
 

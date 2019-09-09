@@ -55,8 +55,8 @@
                 <li>Dredging</li>
               </a>
               <a href="vesselclassinspections.html">
-                  <li>Vessel Class Inspections</li>
-                </a>
+                <li>Vessel Class Inspections</li>
+              </a>
               <a href="environmental.html">
                 <li>Environmental</li>
               </a>
@@ -73,33 +73,62 @@
 
   <section class="services-page" style="background-image: url('../assets/img/homepage/homepage6.jpg')">
 
+    <!-- image window -->
+    <div id="image-page">
+        <div class="image-page-header">
+          <div onclick=closePicture() class="close"></div>
+        </div>
+        <img id="open-img" src="" />
+      </div>
+
     <div class="services-content">
       <h3 class="title">Vessel Class Inspections</h3>
       <hr>
-      <p>
-          Industrial Divers Corporation is approved under the following associations for in water class surveys:
-        </p>
-          <ul class="grid" style="list-style: none">
-            <li style="padding: 20px">
-                  <a target=_blank href="https://ww2.eagle.org/en.html"><img style='width: auto; height: 100px' src="../assets/img/logos/abs-logo.png"
-                    alt="American Bureau of Shipping" />
-                  </a>
-            </li>
-            <li style="padding: 20px">
-              <a target=_blank href="https://www.dnvgl.com/"><img style='width: auto; height: 100px' src="../assets/img/logos/dnv-gl-logo.png" alt="DNV GL" />
-              </a>
-            </li>
-            <li style="padding: 20px">
-              <a target=_blank href="https://www.lr.org/en/"><img style='width: auto; height: 100px' src="../assets/img/logos/LR-logo.png" alt="Lloyd's Register" />
-              </a>
-            </li>
-          </ul>
-          <!-- <ul style="list-style: none">
+      <div class="section-gallery">
+        <div class="column column-1">
+          <div class="services-vessel-class-list">
+              <p>
+                  Industrial Divers Corporation is approved under the following associations for in water class surveys:
+                </p>
+                <ul>
+                  <li>
+                    <a target=_blank href="https://ww2.eagle.org/en.html">
+                      <img src="../assets/img/logos/abs-logo.png" alt="American Bureau of Shipping" />
+                        American Bureau of Shipping
+                    </a>
+                  </li>
+                  <li>
+                    <a target=_blank href="https://www.dnvgl.com/">
+                      <img src="../assets/img/logos/dnv-gl-logo.png" alt="DNV-GL" />
+                        DNV-GL
+                    </a>
+                  </li>
+                  <li>
+                    <a target=_blank href="https://www.lr.org/en/">
+                      <img src="../assets/img/logos/LR-logo.png" alt="Lloyd's Register" />
+                        Lloyd's Registery of Shipping
+                    </a>
+                  </li>
+                </ul>
+          </div>
+          
+        </div>
+        <div class="column column-2">
+          <div class="image-gallery">
+            <a href="#image-page">
+              <img onclick=openPicture(this.src) id="image-gallery-image"
+                src='../assets/img/classinspections/classinspections.jpg' />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- <ul style="list-style: none">
               <a target=_blank href="https://ww2.eagle.org/en.html"><li>American Bureau of Shipping</li></a>
               <a target=_blank href="https://www.dnvgl.com/"><li>DNV-GL</li></a>
               <a target=_blank href="https://www.lr.org/en/"><li>Lloyd’s Registry of Shipping</li></a>
           </ul> -->
-    
+
     </div>
   </section>
 

@@ -1318,6 +1318,33 @@ margin-top: 100px;
 	}
 }
 
+/* Vessel Class Inspections page */
+
+.services-vessel-class-list ul{
+	list-style: none;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.services-vessel-class-list ul li {
+	padding: 10px;
+	background-color: rgb(241, 238, 238);
+	border-radius: 8px;
+	margin: 10px;
+	opacity: .85;
+
+}
+
+.services-vessel-class-list ul li:hover{
+	opacity: 1;
+}
+
+.services-vessel-class-list ul li a img {
+	width: auto;
+	height: 80px;
+}
+
 /* Sections with gallery */
 
 .section-gallery {
@@ -1353,14 +1380,14 @@ margin-top: 100px;
 /* Image gallery */
 
 .image-gallery {
-	height: 400px;
-	width: 400px;
+	height: 350px;
+	width: 350px;
 	background-color: white;
 }
 .image-gallery a img {
 	position: absolute;
-	height: 400px;
-	width: 400px;
+	height: 350px;
+	width: 350px;
 	object-fit: cover;
 	opacity: 0;
 	animation: fadein .2s linear forwards;
@@ -1368,8 +1395,8 @@ margin-top: 100px;
 
 
 .image-gallery .image-gallery-buttons {
-	height: 400px;
-	width: 400px;
+	height: 350px;
+	width: 350px;
 	position: absolute;
 	display: flex;
 	flex-direction: row;
