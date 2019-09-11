@@ -73,10 +73,21 @@
 
   <section class="services-page" style="background-image: url('../../assets/img/homepage/homepage6.jpg')">
 
+    <!-- image window -->
+    <div id="image-page">
+      <div class="image-page-header">
+        <div onclick=closePicture() class="close"></div>
+      </div>
+      <img id="open-img" src="" />
+    </div>
+
     <div class="services-content">
       <div class='back-link'><a href='../environmental.html'><i class="fas fa-arrow-left"></i> Return</a></div>
       <h3 class="title">Environmental Moorings</h3>
       <hr>
+
+      <div class='section-gallery'>
+        <div class='column column-1'>
       <p>
           <ul>
               <li>Miami Dade County Mooring Buoys Installation and Maintenance Contract 2009-2017</li>
@@ -85,6 +96,30 @@
               <li>Crandon Park Sail Boat Mooring Buoys Installation and some Maintenance 2012-2014</li>
           </ul>
       </p>
+      </div>
+      <div class='column column-2'>
+        <div class="image-gallery">
+          <a href="#image-page">
+            <img onclick=openPicture(this.src) class="mySlides" id="image-gallery-image"
+              src='../../assets/img/environmental/environmentalMoorings/EM2.jpg'>
+              <img onclick=openPicture(this.src) class="mySlides" id="image-gallery-image"
+              src='../../assets/img/environmental/environmentalMoorings/Environmental Mooring Install.JPG'>
+              <img onclick=openPicture(this.src) class="mySlides" id="image-gallery-image"
+              src='../../assets/img/environmental/environmentalMoorings/Environmental Moorings.JPG'>
+              <img onclick=openPicture(this.src) class="mySlides" id="image-gallery-image"
+              src='../../assets/img/environmental/environmentalMoorings/buoy1.jpg'>
+              <img onclick=openPicture(this.src) class="mySlides" id="image-gallery-image"
+              src='../../assets/img/environmental/environmentalMoorings/buoy2.jpg'>
+              <img onclick=openPicture(this.src) class="mySlides" id="image-gallery-image"
+              src='../../assets/img/environmental/environmentalMoorings/buoy3.jpg'>
+          </a>
+          <div class="image-gallery-buttons">
+            <i onclick="plusDivs(-1)" class="fas fa-chevron-left fa-2x"></i>
+            <i onclick="plusDivs(1)" class="fas fa-chevron-right fa-2x"></i>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
   </section>
 

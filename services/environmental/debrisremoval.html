@@ -72,14 +72,67 @@
   </header>
 
   <section class="services-page" style="background-image: url('../../assets/img/homepage/homepage6.jpg')">
-  
-      <div class="services-content">
-      <div class='back-link'><a href='../environmental.html'><i class="fas fa-arrow-left"></i> Return</a></div>
-        <h3 class="title">Hazardous and Non-Hazardous Debris Removal</h3>
-        <hr>
-        
+
+    <!-- image window -->
+    <div id="image-page">
+      <div class="image-page-header">
+        <div onclick=closePicture() class="close"></div>
       </div>
-    </section>
+      <img id="open-img" src="" />
+    </div>
+
+    <div class="services-content">
+      <div class='back-link'><a href='../environmental.html'><i class="fas fa-arrow-left"></i> Return</a></div>
+      <h3 class="title">Hazardous and Non-Hazardous Debris Removal</h3>
+      <hr>
+      <div class='section-gallery'>
+        <div class='column column-1'>
+          <p>
+            <u>Hurricane IRMA Hazardous Boat Waste Recovery</u>
+            <br>
+            After Hurricane Irma in 2017 IDC was hired by CBI to assist in the
+            recovery of damaged vessels from Miami all the way north to Brevard
+            County. IDC dive teams worked nonstop from October 2017-January 2018
+            using lift bags to bring the vessels up high enough to drain the fuel
+            tanks and remove other hazardous materials. In many instances IDC
+            dive teams recovered full size vessels and brought them to a dock to
+            be removed by a USCG contracted crane service and taken to landfill.
+          </p>
+          <p>
+            <u>Osborne Tire Recovery</u>
+            <br>
+            IDC started the Osborne tire recovery project in 2015 with funding
+            from the FDEP. We have worked on the project non-stop from May 2015-June
+            2019, in that time period we have removed 250,468 tires from the ocean
+            floor in 70’ of water and transported them to shipping containers in
+            Port Everglades to be taken to a recycling facility in central Florida.
+          </p>
+
+        </div>
+        <div class='column column-2'>
+          <div class="image-gallery">
+            <a href="#image-page">
+              <img onclick=openPicture(this.src) class="mySlides" id="image-gallery-image"
+                src='../../assets/img/environmental/DebrisRemoval/EC-Debris Removal2.jpg'>
+              <img onclick=openPicture(this.src) class="mySlides" id="image-gallery-image"
+                src='../../assets/img/environmental/DebrisRemoval/EC-Debris Removal3.jpg'>
+              <img onclick=openPicture(this.src) class="mySlides" id="image-gallery-image"
+                src='../../assets/img/environmental/DebrisRemoval/EC-Debris Removal4.jpg'>
+              <img onclick=openPicture(this.src) class="mySlides" id="image-gallery-image"
+                src='../../assets/img/environmental/DebrisRemoval/EC-Debris Removal5.jpg'>
+              <img onclick=openPicture(this.src) class="mySlides" id="image-gallery-image"
+                src='../../assets/img/environmental/DebrisRemoval/EC-Debris Removal.jpg'>
+            </a>
+            <div class="image-gallery-buttons">
+              <i onclick="plusDivs(-1)" class="fas fa-chevron-left fa-2x"></i>
+              <i onclick="plusDivs(1)" class="fas fa-chevron-right fa-2x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <footer>
     <p>&copy 2019 IDC Inc. All Rights Reserved</p>

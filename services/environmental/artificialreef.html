@@ -73,10 +73,20 @@
 
   <section class="services-page" style="background-image: url('../../assets/img/homepage/homepage6.jpg')">
 
+    <!-- image window -->
+    <div id="image-page">
+      <div class="image-page-header">
+        <div onclick=closePicture() class="close"></div>
+      </div>
+      <img id="open-img" src="" />
+    </div>
+
     <div class="services-content">
       <div class='back-link'><a href='../environmental.html'><i class="fas fa-arrow-left"></i> Return</a></div>
       <h3 class="title">Artifical Reef Construction</h3>
       <hr>
+      <div class='section-gallery'>
+        <div class='column column-1'>
       <p>
         <u>Julia Tuttle 2018 Limestone Reef</u>
         <br>
@@ -108,6 +118,47 @@
         reef balls for people who have passed away. IDC deployed 9 reef balls for Eternal reefs in June 2019 with our
         50’ Dive Support Vessel (DSV) “Reef Ranger”.
       </p>
+      </div>
+      <div class="column column-2">
+        <div class="image-gallery">
+          <a href="#image-page">
+        <img 
+        onclick=openPicture(this.src)
+        class="mySlides"
+        id="image-gallery-image" 
+        src='../../assets/img/environmental/artificialReefConstruction/CCA John Baker Art Reef.jpg'
+        >
+        <img 
+        onclick=openPicture(this.src)
+        class="mySlides"
+        id="image-gallery-image" 
+        src='../../assets/img/environmental/artificialReefConstruction/PEV Turning notch Art reef.jpg'
+        >
+        <img 
+        onclick=openPicture(this.src)
+        class="mySlides"
+        id="image-gallery-image" 
+        src='../../assets/img/environmental/artificialReefConstruction/Port Everglades Turning Notch Reef.jpg'
+        >
+        <img 
+        onclick=openPicture(this.src)
+        class="mySlides"
+        id="image-gallery-image" 
+        src='../../assets/img/environmental/artificialReefConstruction/Port Everglades Turning notch artificial reef.jpg'
+        >
+        <img 
+        onclick=openPicture(this.src)
+        class="mySlides"
+        id="image-gallery-image" 
+        src='../../assets/img/environmental/artificialReefConstruction/Artificial Reef Connection Miami.JPG'
+        >
+        </a>
+        <div class="image-gallery-buttons">
+          <i onclick="plusDivs(-1)" class="fas fa-chevron-left fa-2x"></i>
+          <i onclick="plusDivs(1)" class="fas fa-chevron-right fa-2x"></i>
+        </div>
+      </div>
+      </div>
     </div>
   </section>
 

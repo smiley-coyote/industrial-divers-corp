@@ -151,7 +151,7 @@ section p {
 #image-page img {
 	position: relative;
 	margin: 20px auto 5px;
-	width: 50vw;
+	max-width: 55vw;
 	height: auto;
 }
 
@@ -976,6 +976,17 @@ footer p {
 	border: 1px solid black;
 }
 
+.about-content-area hr {
+	margin: 0 auto 40px;
+}
+
+.about-content-area img {
+	position: relative;
+	width: 300px;
+	height: auto;
+	margin: 0 auto;
+}
+
 @media (max-width: 1000px){
 	.about-content-area{
 		width: 90%;
@@ -1007,7 +1018,7 @@ footer p {
 /* Services Nav */
 
 #services-nav {
-	width: 90%;
+	width: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1374,6 +1385,9 @@ margin-top: 100px;
 	.column-2 {
 		order: -1;
 	}
+	.image-gallery {
+		margin-bottom: 40px;
+	}
 
 }
 
@@ -1411,10 +1425,11 @@ margin-top: 100px;
 	align-self: center;
 	padding: 2px;
 	pointer-events: all;
+	opacity: .60;
 }
 
 .image-gallery .image-gallery-buttons i:hover {
-	background-color: gray;
+	opacity: 1;
 	cursor: pointer;
 }
 
