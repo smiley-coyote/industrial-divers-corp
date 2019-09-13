@@ -13,63 +13,82 @@
 </head>
 
 <body onload="header()">
-  <header>
-    <div class='logo'>
-      <img src='../assets/img/logos/logoa2.png' />
-      <h2><a href="../index.html">Industrial Divers Corporation</a></h2>
-    </div>
-    <nav>
-      <div class="desktop-nav">
-        <li class="services-nav">
-          <a href="#services">Services</a>
-          <ul class="services-tab">
-            <a href="construction.html">
-              <li>Heavy Construction</li>
-            </a>
-            <a href="dredging.html">
-              <li>Dredging</li>
-            </a>
-            <a href="vesselclassinspections.html">
-              <li>Vessel Class Inspections</li>
-            </a>
-            <a href="environmental.html">
-              <li>Environmental</li>
-            </a>
-          </ul>
-        </li>
-        <li><a class='link-underline' href="../about.html">About Us</a></li>
-        <li><a class='link-underline' href="../employment.html">Employment</a></li>
-        <li><a class='link-underline' href="../contact.html">Contact</a></li>
-      </div>
-      <div class="mobile-nav">
-        <li id="menu" onClick="mobileNav()">Menu</li>
-        <div id="mobile-hidden" class="mobile-nav-hidden">
-          <!-- services tab -->
-          <li class="mobile-services-nav">
-            <a href="#services">Services</a>
-            <ul class="mobile-services-tab">
-              <a href="construction.html">
-                <li>Heavy Construction</li>
-              </a>
-              <a href="dredging.html">
-                <li>Dredging</li>
-              </a>
-              <a href="vesselclassinspections.html">
-                <li>Vessel Class Inspections</li>
-              </a>
-              <a href="environmental.html">
-                <li>Environmental</li>
-              </a>
-            </ul>
-          </li>
-
-          <li><a href="../about.html">About Us</a></li>
-          <li><a href="../employment.html">Employment</a></li>
-          <li><a href="../contact.html">Contact</a></li>
+    <header>
+        <div class='logo'>
+          <img src='../assets/img/logos/logoa2.png' />
+          <h2><a href="../index.html">Industrial Divers Corporation</a></h2>
         </div>
-      </div>
-    </nav>
-  </header>
+        <nav>
+          <div class="desktop-nav">
+            <li class="services-dropdown">
+              <a href="#services">Services</a>
+              <ul class="services-tab">
+                <a href="construction.html">
+                  <li>Heavy Construction</li>
+                </a>
+                <a href="dredging.html">
+                  <li>Dredging</li>
+                </a>
+                <a href="vesselclassinspections.html">
+                  <li>Vessel Class Inspections</li>
+                </a>
+                <a href="environmental.html">
+                  <li>Environmental</li>
+                </a>
+              </ul>
+            </li>
+            <li class="services-dropdown">
+                <a href="../about.html">About</a>
+                <ul class="services-tab">
+                  <a href="../about.html">
+                    <li>About Us</li>
+                  </a>
+                  <a href="../about/equipment.html">
+                    <li>Equipment Capabilities</li>
+                  </a>
+                </ul>
+              </li>
+            <li><a class='link-underline' href="../employment.html">Employment</a></li>
+            <li><a class='link-underline' href="../contact.html">Contact</a></li>
+          </div>
+          <div class="mobile-nav">
+            <li id="menu" onClick="mobileNav()">Menu</li>
+            <div id="mobile-hidden" class="mobile-nav-hidden">
+              <!-- services tab -->
+              <li class="mobile-services-dropdown">
+                <a href="#services">Services</a>
+                <ul class="mobile-services-tab">
+                  <a href="construction.html">
+                    <li>Heavy Construction</li>
+                  </a>
+                  <a href="dredging.html">
+                    <li>Dredging</li>
+                  </a>
+                  <a href="vesselclassinspections.html">
+                    <li>Vessel Class Inspections</li>
+                  </a>
+                  <a href="environmental.html">
+                    <li>Environmental</li>
+                  </a>
+                </ul>
+              </li>
+              <li class="mobile-services-dropdown">
+                  <a href="#about">About</a>
+                  <ul class="mobile-services-tab">
+                    <a href="../about.html">
+                      <li>About Us</li>
+                    </a>
+                    <a href="../about/equipment.html">
+                      <li>Equipment Capabilities</li>
+                    </a>
+                  </ul>
+                </li>
+              <li><a href="../employment.html">Employment</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+            </div>
+          </div>
+        </nav>
+      </header>
 
   <section class="services-page" style="background-image: url('../assets/img/homepage/homepage6.jpg')">
 
@@ -81,7 +100,7 @@
       <img id="open-img" src="" />
     </div>
 
-    <div class="services-content">
+    <div class="section-content">
       <h3 class="title">Dredging Services</h3>
       <hr>
       <div class='section-gallery'>

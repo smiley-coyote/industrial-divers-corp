@@ -88,7 +88,14 @@ function mobileNav(){
 var slideIndex = 1;
 showDivs(slideIndex);
 
+var slideshow = setInterval(slideShow, 3000);
+
+function slideShow(){
+  showDivs(slideIndex += 1);
+}
+
 function plusDivs(n) {
+  clearInterval(slideshow)
   showDivs(slideIndex += n);
 }
 

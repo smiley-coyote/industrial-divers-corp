@@ -99,6 +99,7 @@ section p {
 	text-align: center;
 }
 
+
 @media (max-width: 800px) {
 	section {
 		padding: 50px 20px;
@@ -269,16 +270,16 @@ header nav .desktop-nav li:not(:first-child):before {
 	color: rgb(143, 143, 143);
 }
 
-header nav .desktop-nav .services-nav .services-tab a {
+header nav .desktop-nav .services-dropdown .services-tab a {
 	color: rgb(233, 233, 233);
 }
 
 
-header nav .desktop-nav .services-nav .services-tab a:hover{
+header nav .desktop-nav .services-dropdown .services-tab a:hover{
 	color: #fff;
 }
 
-header nav .desktop-nav .services-nav .services-tab {
+header nav .desktop-nav .services-dropdown .services-tab {
 	position: absolute;
 	background-color: rgb(255, 255, 255);
 	display: none;
@@ -289,16 +290,16 @@ header nav .desktop-nav .services-nav .services-tab {
 	width: auto;
 }
 
-header nav .desktop-nav .services-nav .services-tab li{
+header nav .desktop-nav .services-dropdown .services-tab li{
 	color: black;
 	text-shadow: none;
 }
 
-header nav .desktop-nav .services-nav .services-tab li:hover{
+header nav .desktop-nav .services-dropdown .services-tab li:hover{
 	color: rgb(150, 150, 150);
 }
 
-header nav .desktop-nav .services-nav:hover .services-tab{
+header nav .desktop-nav .services-dropdown:hover .services-tab{
 	display: block;
 	-webkit-animation: .3s reveal forwards;
 	        animation: .3s reveal forwards;
@@ -307,24 +308,22 @@ header nav .desktop-nav .services-nav:hover .services-tab{
 @-webkit-keyframes reveal {
 	0%{
 		opacity: 0;
-		height: 0px;
 	}
 	100%{
 		padding: 0px 15px 0px 10px;
 		opacity: 1;
-		height: 130%;
 	}
 }
 
 @keyframes reveal {
-	0%{
+	from {
 		opacity: 0;
-		height: 0px;
+		max-height: 0px;
 	}
-	100%{
-		padding: 0px 15px 15px 10px;
+	to {
+		padding: 0px 15px 0px 10px;
+		max-height: 300px;
 		opacity: 1;
-		height: 100%;
 	}
 }
 
@@ -348,83 +347,48 @@ header nav .mobile-nav:hover {
 	cursor: pointer;
 }
 
-header nav .mobile-nav .mobile-nav-hidden .mobile-services-nav .mobile-services-tab {
+header nav .mobile-nav .mobile-nav-hidden .mobile-services-dropdown .mobile-services-tab {
 	display: none;
-	background-color: rgb(235, 235, 235);
+	background-color: rgba(228, 228, 228, 0.781);
 }
 
-header nav .mobile-nav .mobile-nav-hidden .mobile-services-nav .mobile-services-tab .divider {
+header nav .mobile-nav .mobile-nav-hidden .mobile-services-dropdown .mobile-services-tab .divider {
 	color: rgb(167, 167, 167);
 }
 
-header nav .mobile-nav .mobile-nav-hidden .mobile-services-nav:hover .mobile-services-tab{
+header nav .mobile-nav .mobile-nav-hidden .mobile-services-dropdown:hover .mobile-services-tab{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
 	        flex-direction: column;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
 	        justify-content: center;
-	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
 	        align-items: center;
-	-webkit-animation: .3s reveal2 forwards;
 	        animation: .3s reveal2 forwards;
 }
 
 
-header nav .mobile-nav .mobile-nav-hidden .mobile-services-nav .mobile-services-tab li {
+header nav .mobile-nav .mobile-nav-hidden .mobile-services-dropdown .mobile-services-tab li {
 	padding: 5px;
 	color: black;
 	text-shadow: none;
 }
 
-@-webkit-keyframes reveal2 {
-	0%{
-		opacity: 0;
-	}
-	100%{
-		opacity: 1;
-	}
-}
 
 @keyframes reveal2 {
 	0%{
 		opacity: 0;
+		max-height: 0px;
+	}
+	50% {
+		max-height: 300px;
+		opacity: 0;
 	}
 	100%{
 		opacity: 1;
 	}
 }
 
-@-webkit-keyframes reveal3 {
-	0%{
-		opacity: 0;
-		height: 0%;
-	}
-	100%{
-		padding: 0px 15px 0px 10px;
-		opacity: 1;
-		height: 130%;
-	}
-}
-
-@keyframes reveal3 {
-	0%{
-		opacity: 0;
-		height: 0%;
-	}
-	100%{
-		padding: 0px 15px 0px 10px;
-		opacity: 1;
-		height: 130%;
-	}
-}
 
 @media (max-width: 1320px){
 
@@ -459,7 +423,7 @@ header nav .mobile-nav .mobile-nav-hidden .mobile-services-nav .mobile-services-
 
 
 
-@media (max-width: 1000px){
+@media (max-width: 1060px){
 	header nav .desktop-nav {
 		display: none;
 	}
@@ -766,9 +730,9 @@ header {
 }
 
 
-/*Testimonials Section*/
+/*Testimonials Section removed*/
 
-.testimonials .quote {
+/* .testimonials .quote {
 	font-size: 22px;
 	font-weight: 300;
 	line-height: 1.5;
@@ -784,7 +748,7 @@ header {
 	.testimonials .author {
 		font-size: 14px;
 	}
-}
+} */
 
 /*Contact Section*/
 
@@ -948,6 +912,21 @@ footer p {
 /* About Section */
 
 .about {
+	background-image: url("../img/divers17.jpg");
+	background-size: cover;
+	background-color: #80a3db;
+}
+
+.about img {
+	height: 350px;
+	width: auto;
+	margin: 0 auto 40px;
+}
+
+.about h4 {
+	font-size: 1.8em;
+}
+/* .about {
 	position: relative;
 	min-height: 100vh;
 	background-image: url("../img/divers17.jpg");
@@ -1013,7 +992,7 @@ footer p {
 	.about-content-area{
 		width: 100%;
 	}
-}
+} */
 
 /* Services Nav */
 
@@ -1124,7 +1103,7 @@ footer p {
 	background-color: #80a3db;
 }
 
-.services-content {	
+.section-content {	
 	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1144,49 +1123,49 @@ footer p {
 	border-radius: 4px;
 }
 
-/* .services-content img {
+/* .section-content img {
 	width: 50%;
 	height: auto;
 	margin-bottom: 25px;
 } */
 
-.services-content h3 {
+.section-content h3 {
 	text-align: center;
 	margin: 20px 0px;
 }
 
-.services-content p {
+.section-content p {
 	text-align: left;
 }
 
 
-.services-content ul {
+.section-content ul {
 	width: 75%;
 	list-style: disc;
 	text-align: left;
 	margin-left: 50px;
 }
 
-.services-content a {
+.section-content a {
 	color: rgb(0, 0, 0);
 	opacity: 1;
 }
 
-.services-content a img{
+.section-content a img{
 	position: relative;
 	display: block;
 	opacity: 1;
 	margin: 0 auto 20px;
 }
 
-.services-content .back-link {
+.section-content .back-link {
 	position: absolute;
 	left: 8px;
 	top: 8px;
 	font-size: 20px;
 }
 
-.services-content .back-link a {
+.section-content .back-link a {
 	color: black;
 	
 }
@@ -1202,8 +1181,8 @@ footer p {
 }
 
 
-@media (max-width: 1000px) {
-	.services-content{
+@media (max-width: 1060px) {
+	.section-content{
 		width: 90%;
 		margin-top: 210px;
 	}
@@ -1211,19 +1190,19 @@ footer p {
 
 @media (max-width: 800px){
 
-	.services-content{
+	.section-content{
 		width: 100%;
 	}
-	.services-content img {
+	.section-content img {
 		width: 65%;
 	}
 }
 
 @media (max-width: 600px){
-	.services-content h3 {
+	.section-content h3 {
 		margin-top: 25px;
 	}
-	.services-content img {
+	.section-content img {
 		width: 90%;
 	}
 }
@@ -1331,11 +1310,19 @@ margin-top: 100px;
 
 /* Vessel Class Inspections page */
 
+.services-vessel-class-list p{
+	text-align: center;
+}
+
 .services-vessel-class-list ul{
 	list-style: none;
 	text-align: center;
-	width: 50%;
+	width: 100%;
 	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .services-vessel-class-list ul li {
@@ -1343,8 +1330,8 @@ margin-top: 100px;
 	background-color: rgb(241, 238, 238);
 	border-radius: 8px;
 	margin: 10px;
-	opacity: .85;
-
+	opacity: .80;
+	width: 200px;
 }
 
 .services-vessel-class-list ul li:hover{
@@ -1404,7 +1391,7 @@ margin-top: 100px;
 	width: 350px;
 	object-fit: cover;
 	opacity: 0;
-	animation: fadein .2s linear forwards;
+	animation: fadein .4s linear forwards;
 }
 
 
