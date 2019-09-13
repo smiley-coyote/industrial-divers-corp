@@ -13,106 +13,125 @@
 </head>
 
 <body onload="header()">
-    <header>
-        <div class='logo'>
-          <img src='../../assets/img/logos/logoa2.png' />
-          <h2><a href="../../index.html">Industrial Divers Corporation</a></h2>
+  <header>
+    <div class='logo'>
+      <img src='../../assets/img/logos/logoa2.png' />
+      <h2><a href="../../index.html">Industrial Divers Corporation</a></h2>
+    </div>
+    <nav>
+      <div class="desktop-nav">
+        <li class="services-dropdown">
+          <a href="#services">Services</a>
+          <ul class="services-tab">
+            <a href="../construction.html">
+              <li>Heavy Construction</li>
+            </a>
+            <a href="../dredging.html">
+              <li>Dredging</li>
+            </a>
+            <a href="../vesselclassinspections.html">
+              <li>Vessel Class Inspections</li>
+            </a>
+            <a href="../environmental.html">
+              <li>Environmental</li>
+            </a>
+          </ul>
+        </li>
+        <li class="services-dropdown">
+          <a href="../../about.html">About</a>
+          <ul class="services-tab">
+            <a href="../../about.html">
+              <li>About Us</li>
+            </a>
+            <a href="../../about/equipment.html">
+              <li>Equipment Capabilities</li>
+            </a>
+          </ul>
+        </li>
+        <li><a class='link-underline' href="../../employment.html">Employment</a></li>
+        <li><a class='link-underline' href="../../contact.html">Contact</a></li>
+      </div>
+      <div class="mobile-nav">
+        <li id="menu" onClick="mobileNav()">Menu</li>
+        <div id="mobile-hidden" class="mobile-nav-hidden">
+          <!-- services tab -->
+          <li class="mobile-services-dropdown">
+            <a href="#services">Services</a>
+            <ul class="mobile-services-tab">
+              <a href="../construction.html">
+                <li>Heavy Construction</li>
+              </a>
+              <a href="../dredging.html">
+                <li>Dredging</li>
+              </a>
+              <a href="../vesselclassinspections.html">
+                <li>Vessel Class Inspections</li>
+              </a>
+              <a href="../environmental.html">
+                <li>Environmental</li>
+              </a>
+            </ul>
+          </li>
+          <li class="mobile-services-dropdown">
+            <a href="#about">About</a>
+            <ul class="mobile-services-tab">
+              <a href="../../about.html">
+                <li>About Us</li>
+              </a>
+              <a href="../../about/equipment.html">
+                <li>Equipment Capabilities</li>
+              </a>
+            </ul>
+          </li>
+          <li><a href="../../employment.html">Employment</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
         </div>
-        <nav>
-          <div class="desktop-nav">
-            <li class="services-dropdown">
-              <a href="#services">Services</a>
-              <ul class="services-tab">
-                <a href="../construction.html">
-                  <li>Heavy Construction</li>
-                </a>
-                <a href="../dredging.html">
-                  <li>Dredging</li>
-                </a>
-                <a href="../vesselclassinspections.html">
-                  <li>Vessel Class Inspections</li>
-                </a>
-                <a href="../environmental.html">
-                  <li>Environmental</li>
-                </a>
-              </ul>
-            </li>
-            <li class="services-dropdown">
-                <a href="../../about.html">About</a>
-                <ul class="services-tab">
-                  <a href="../../about.html">
-                    <li>About Us</li>
-                  </a>
-                  <a href="../../about/equipment.html">
-                    <li>Equipment Capabilities</li>
-                  </a>
-                </ul>
-              </li>
-            <li><a class='link-underline' href="../../employment.html">Employment</a></li>
-            <li><a class='link-underline' href="../../contact.html">Contact</a></li>
-          </div>
-          <div class="mobile-nav">
-            <li id="menu" onClick="mobileNav()">Menu</li>
-            <div id="mobile-hidden" class="mobile-nav-hidden">
-              <!-- services tab -->
-              <li class="mobile-services-dropdown">
-                <a href="#services">Services</a>
-                <ul class="mobile-services-tab">
-                  <a href="../construction.html">
-                    <li>Heavy Construction</li>
-                  </a>
-                  <a href="../dredging.html">
-                    <li>Dredging</li>
-                  </a>
-                  <a href="../vesselclassinspections.html">
-                    <li>Vessel Class Inspections</li>
-                  </a>
-                  <a href="../environmental.html">
-                    <li>Environmental</li>
-                  </a>
-                </ul>
-              </li>
-              <li class="mobile-services-dropdown">
-                  <a href="#about">About</a>
-                  <ul class="mobile-services-tab">
-                    <a href="../../about.html">
-                      <li>About Us</li>
-                    </a>
-                    <a href="../../about/equipment.html">
-                      <li>Equipment Capabilities</li>
-                    </a>
-                  </ul>
-                </li>
-              <li><a href="../../employment.html">Employment</a></li>
-              <li><a href="../../contact.html">Contact</a></li>
-            </div>
-          </div>
-        </nav>
-      </header>
+      </div>
+    </nav>
+  </header>
   <section class="services-page" style="background-image: url('../../assets/img/homepage/homepage6.jpg')">
-
+    <div id="image-page">
+        <div class="image-page-header">
+          <div onclick=closePicture() class="close"></div>
+        </div>
+        <img id="open-img" src="" />
+      </div>
     <div class="section-content">
       <div class='back-link'><a href='../construction.html'><i class="fas fa-arrow-left"></i> Return</a></div>
       <h3 class="title">Cable Lay, Shore Endings, & Sensor Range Installation</h3>
       <hr>
-      <p>
-          IDC continues to be involved in cable installation projects for the 
-          last 25 years. IDC has been continuously providing for all aspects of 
-          submarine cable installation, shore endings, and sensor ranges for the 
-          United States Naval Research Community. Services include but are not 
-          limited to:
-          <ul>
-              <li>Range Array refurbishments.</li>
-              <li>Mooring Buoy inspections, recoveries, and installations.</li>
-              <li>Vessel Mooring, Great Stirrup Cay, and Green Cay.</li>
-              <li>Cable landings Great Stirrup.</li>
-              <li>Direction Drilling support and cable installs for Boca Raton 9 conduits, 4 cables.</li>
-              <li>Direction Drilling support and cable installs for Hollywood Beach 2 conduits, 2 cables.</li>
-              <li>SFOMC cable repairs, splice support, cable lay, sensor installation and maintenance including environmental compliance from 1992 to the present.</li>
-              <li>GTMO shore end cable landing, stabilization and survey</li>
-          </ul>  
-         
-      </p>
+      <div class="section-gallery">
+        <div class="column column-1">
+            <p>
+                IDC continues to be involved in cable installation projects for the
+                last 25 years. IDC has been continuously providing for all aspects of
+                submarine cable installation, shore endings, and sensor ranges for the
+                United States Naval Research Community. Services include but are not
+                limited to:
+                <ul>
+                  <li>Range Array refurbishments.</li>
+                  <li>Mooring Buoy inspections, recoveries, and installations.</li>
+                  <li>Vessel Mooring, Great Stirrup Cay, and Green Cay.</li>
+                  <li>Cable landings Great Stirrup.</li>
+                  <li>Direction Drilling support and cable installs for Boca Raton 9 conduits, 4 cables.</li>
+                  <li>Direction Drilling support and cable installs for Hollywood Beach 2 conduits, 2 cables.</li>
+                  <li>SFOMC cable repairs, splice support, cable lay, sensor installation and maintenance including
+                    environmental compliance from 1992 to the present.</li>
+                  <li>GTMO shore end cable landing, stabilization and survey</li>
+                </ul>
+        
+              </p>
+        </div>
+        <div class="column column-2">
+          <div class="image-gallery">
+            <a href="#image-page">
+              <img onclick=openPicture(this.src) class="mySlides" id="image-gallery-image"
+                src='../../assets/img/heavyconstruction/sensorrangeinstall.JPG'>
+
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
