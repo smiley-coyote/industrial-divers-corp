@@ -38,16 +38,16 @@
           </ul>
         </li>
         <li class="services-dropdown">
-            <a href="../about.html">About</a>
-            <ul class="services-tab">
-              <a href="../about.html">
-                <li>About Us</li>
-              </a>
-              <a href="equipment.html">
-                <li>Equipment Capabilities</li>
-              </a>
-            </ul>
-          </li>
+          <a href="../about.html">About</a>
+          <ul class="services-tab">
+            <a href="../about.html">
+              <li>About Us</li>
+            </a>
+            <a href="equipment.html">
+              <li>Equipment Capabilities</li>
+            </a>
+          </ul>
+        </li>
         <li><a class='link-underline' href="../employment.html">Employment</a></li>
         <li><a class='link-underline' href="../contact.html">Contact</a></li>
       </div>
@@ -73,16 +73,16 @@
             </ul>
           </li>
           <li class="mobile-services-dropdown">
-              <a href="#about">About</a>
-              <ul class="mobile-services-tab">
-                <a href="../about.html">
-                  <li>About Us</li>
-                </a>
-                <a href="equipment.html">
-                  <li>Equipment Capabilities</li>
-                </a>
-              </ul>
-            </li>
+            <a href="#about">About</a>
+            <ul class="mobile-services-tab">
+              <a href="../about.html">
+                <li>About Us</li>
+              </a>
+              <a href="equipment.html">
+                <li>Equipment Capabilities</li>
+              </a>
+            </ul>
+          </li>
           <li><a href="../employment.html">Employment</a></li>
           <li><a href="../contact.html">Contact</a></li>
         </div>
@@ -94,33 +94,88 @@
 
     <!-- image window -->
     <div id="image-page">
-        <div class="image-page-header">
-          <div onclick=closePicture() class="close"></div>
-        </div>
-        <img id="open-img" src="" />
+      <div class="image-page-header">
+        <div onclick=closePicture() class="close"></div>
       </div>
+      <img id="open-img" src="" />
+    </div>
 
     <div class="section-content">
       <h3 class="title">Equipment</h3>
       <hr>
-      <p>
-        IDC owns and maintains all of its equipment in house. Some of our current equipment inventory includes:
-      </p>
-
-      <p>
-        Two 36’ twin engine barges, three dive boats, a 33,000 GVW 18’
-        flatbed crane truck, and a forklift, welding equipment, hydraulic
-        and pneumatic tools, underwater pipe and cable tracking location
-        systems, diver carried magnetometer, metal detectors, OSHA required
-        safety equipment, underwater still and video cameras; including two
-        of the latest state of the art Sony HD-CX550V video/still cameras
-        in Light & Motion Professional Blue Fin Housings, and one Sony
-        HD-SR12 video still camera in a Light & Motion Blue Fin Housing.
-        IDC also has five closed circuit helmet cameras, inspection cameras,
-        and a Trimble survey quality GPS system with Hypack survey software
-        in addition to five WAAS GPS systems for the dive support workboats.
-      </p>
+      <div class='section-gallery'>
+        <div class='column column-1'>
+          <!-- <p>
+              IDC owns and maintains all of its equipment in house. Some of our current equipment inventory includes:
+            </p>
+      
+            <p>
+              Two 36’ twin engine barges, three dive boats, a 33,000 GVW 18’
+              flatbed crane truck, and a forklift, welding equipment, hydraulic
+              and pneumatic tools, underwater pipe and cable tracking location
+              systems, diver carried magnetometer, metal detectors, OSHA required
+              safety equipment, underwater still and video cameras; including two
+              of the latest state of the art Sony HD-CX550V video/still cameras
+              in Light & Motion Professional Blue Fin Housings, and one Sony
+              HD-SR12 video still camera in a Light & Motion Blue Fin Housing.
+              IDC also has five closed circuit helmet cameras, inspection cameras,
+              and a Trimble survey quality GPS system with Hypack survey software
+              in addition to five WAAS GPS systems for the dive support workboats.
+            </p> -->
+            <p>
+          <h4>IDC Work Boats</h4>
+          <ul>
+            <li><u>Reef Ranger</u></li>
+            <li>Waterman</li>
+            <li>50' x 17'</li>
+            <li>600 hp twin engine aluminum</li>
+            <li>hull work boat with crane</li>
+          </ul>
+          <ul>
+            <li><u>Reef Tender</u></li>
+            <li>TNT</li>
+            <li>36' x 11'</li>
+            <li>230 hp twin engine aluminum</li>
+            <li>hull work boat with hydraulic stiff leg a-frame and winch</li>
+          </ul>
+        </p>
+        </div>
+        <div class='column column-2'>
+          <div class="image-gallery">
+            <a href="#image-page">
+              <img onclick=openPicture(this.src) class="mySlides" id="image-gallery-image"
+                src='../assets/img/boat/boat2.jpg'>
+              <img onclick=openPicture(this.src) class="mySlides" id="image-gallery-image"
+                src='../assets/img/boat/boat3.jpg'>
+              <img onclick=openPicture(this.src) class="mySlides" id="image-gallery-image"
+                src='../assets/img/boat/boat.JPG'>
+            </a>
+            <div class="image-gallery-buttons">
+              <i onclick="plusDivs(-1)" class="fas fa-chevron-left fa-2x"></i>
+              <i onclick="plusDivs(1)" class="fas fa-chevron-right fa-2x"></i>
+            </div>
+          </div>
+        </div>
       </div>
+      <p>
+          IDC owns and maintains all of its equipment in house. Some of our current equipment inventory includes:
+        </p>
+  
+        <p>
+          Two 36’ twin engine barges, three dive boats, a 33,000 GVW 18’
+          flatbed crane truck, and a forklift, welding equipment, hydraulic
+          and pneumatic tools, underwater pipe and cable tracking location
+          systems, diver carried magnetometer, metal detectors, OSHA required
+          safety equipment, underwater still and video cameras; including two
+          of the latest state of the art Sony HD-CX550V video/still cameras
+          in Light & Motion Professional Blue Fin Housings, and one Sony
+          HD-SR12 video still camera in a Light & Motion Blue Fin Housing.
+          IDC also has five closed circuit helmet cameras, inspection cameras,
+          and a Trimble survey quality GPS system with Hypack survey software
+          in addition to five WAAS GPS systems for the dive support workboats.
+        </p> 
+
+    </div>
 
     </div>
   </section>
@@ -152,3 +207,20 @@
 <script src="../assets/javascript/app.js" type="text/javascript"></script>
 
 </html>
+
+<!-- 
+
+
+Reef Ranger
+Waterman
+50' x 17'
+600 hp twin engine aluminum
+hull work boat with crane
+
+Reef Tender
+TNT
+36' x 11'
+230 hp twin engine aluminum
+hull work boat with hydraulic stiff leg a-frame and winch 
+
+ -->
