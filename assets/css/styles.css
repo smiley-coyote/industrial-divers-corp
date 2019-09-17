@@ -106,6 +106,10 @@ section p {
 	}
 }
 
+.list-bullets {
+	list-style: disc !important;
+}
+
 .form-inputs {
 	display: flex;
 	flex-direction: row;
