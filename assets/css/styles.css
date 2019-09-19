@@ -56,10 +56,10 @@ section {
 	padding: 100px 80px;
 }
 
-section:not(.hero):nth-child(even) {
+section:not(.main):nth-child(even) {
 	background-color: #ffffff;
 }
-section:not(.hero):nth-child(odd) {
+section:not(.main):nth-child(odd) {
 	background-color: #eeeeee;
 }
 
@@ -521,9 +521,9 @@ header {
 
 
 
-/*Hero Styles*/
+/*Main Page Styles*/
 
-.hero {
+.main {
 	position: relative;
 	-webkit-box-pack: end;
 	    -ms-flex-pack: end;
@@ -584,28 +584,28 @@ header {
 }
 
 
-.hero h1 {
+.main h1 {
 	font: bold 40px "Open Sans", sans-serif;
 	margin-bottom: 15px;
 	text-shadow: 2px 2px rgb(44, 44, 44);
 }
 
-.hero h3 {
+.main h3 {
 	font: normal 28px "Open Sans", sans-serif;
 	width: 75vw;
 	margin-bottom: 40px;
 	text-shadow: 2px 2px rgb(44, 44, 44);
 }
 
-.hero a.btn {
+.main a.btn {
 	padding: 20px 46px;
 }
 
-.hero a.btn:hover {
+.main a.btn:hover {
 	opacity: .85;
 }
 
-#hero-content-area {
+#main-content-area {
 	opacity: 0;
 	margin-top: 100px;
 	-webkit-animation: 1s slidefadeUp 1s forwards;
@@ -654,20 +654,20 @@ header {
 
 @media (max-width: 800px) {
 
-	.hero {
+	.main {
 		min-height: 600px;
 	}
 
-	.hero h1 {
+	.main h1 {
 		font-size: 48px;
 	}
 
-	.hero h3 {
+	.main h3 {
 		font-size: 20px;
 		width: 85vw;
 	}
 
-	.hero a.btn {
+	.main a.btn {
 		padding: 15px 40px;
 	}
 }
@@ -954,73 +954,17 @@ footer p {
 .about h4 {
 	font-size: 1.8em;
 }
-/* .about {
-	position: relative;
-	min-height: 100vh;
-	background-image: url("../img/divers17.jpg");
-	background-size: cover;
-	background-color: #80a3db;
+
+.about .section-content .column ul {
+	list-style: disc;
+	margin-left: 40px;
 }
 
-.about ul{
-	list-style-type: circle;
-	margin-left: 20px;
-}
-
-.about p{
-	text-align: left;
-	margin: 0 0 25px 0;
-	padding: 0;
-}
-
-.about-content-area{
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	padding: 25px;
-	width: 75%;
-	background-color: rgba(236, 236, 236, 0.815);
-	margin-top: 100px;
-	border: 1px solid black;
-}
-
-.about-content-area hr {
-	margin: 0 auto 40px;
-}
-
-.about-content-area img {
-	position: relative;
-	width: 300px;
-	height: auto;
-	margin: 0 auto;
-}
-
-@media (max-width: 1000px){
-	.about-content-area{
-		width: 90%;
-		margin-top: 210px;
+@media (max-width: 1200px) {
+	.about .column-2 {
+		order: 0;
 	}
 }
-@media (max-width: 800px) {
-	.about {
-		min-height: 600px;
-	}
-
-	.about h1 {
-		font-size: 48px;
-	}
-
-	.about h3 {
-		font-size: 24px;
-	}
-
-	.about a.btn {
-		padding: 15px 40px;
-	}
-
-	.about-content-area{
-		width: 100%;
-	}
-} */
 
 /* Services Nav */
 
@@ -1211,7 +1155,7 @@ footer p {
 
 @media (max-width: 1060px) {
 	.section-content{
-		width: 90%;
+		width: 90vw;
 		margin-top: 210px;
 	}
 }
@@ -1219,10 +1163,11 @@ footer p {
 @media (max-width: 800px){
 
 	.section-content{
-		width: 100%;
+		width: 95vw;
 	}
 	.section-content img {
 		width: 65%;
+		height: auto;
 	}
 }
 
@@ -1232,6 +1177,7 @@ footer p {
 	}
 	.section-content img {
 		width: 90%;
+		height: auto;
 	}
 }
 
@@ -1261,44 +1207,15 @@ footer p {
 	text-decoration: underline;
 }
 
-.contact-page .contact-page-window ul {
-	list-style-type:none;
-}
 
 .contact-page a {
 	color: black;
 }
 
-.contact-page-window{
-padding: 25px;
-	width: 75%;
-	background-color: rgba(236, 236, 236, 0.815);
-margin-top: 100px;
-	border: 1px solid black;
-}
-
 @media (max-width: 1200px){
-	.contact-page-window .section-gallery .column-2 {
+	.contact-page .section-gallery .column-2 {
 		order: 0;
 	}
-}
-
-@media (max-width: 1060px) {
-	.contact-page-window{
-		margin-top: 210px;
-	}
-}
-
-@media (max-width: 800px){
-
-	.contact-page-window{
-		width: 100%;
-	}
-
-
-.contact-page-window li{
-	list-style: none;
-}
 }
 
 /* Employment */
@@ -1315,32 +1232,13 @@ margin-top: 100px;
 	color: blue;
 }
 
-.employment-page-content-area{
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	padding: 25px;
-	width: 75%;
-	background-color: rgba(236, 236, 236, 0.815);
-margin-top: 100px;
-	border: 1px solid black;
+/* Equipment Page */
+
+.equipment .section-content .section-gallery .column-1 {
+	padding: 30px;
+	
 }
 
-@media (max-width: 1000px){
-
-	.employment-page-content-area{
-		margin-top: 210px;
-		width: 90%;
-	}
-}
-@media (max-width: 800px){
-.employment-page .employment-page-content-area .title {
-	font-size: 1.5em;
-}
-
-	.employment-page-content-area{
-		width: 100%;
-	}
-}
 
 /* Vessel Class Inspections page */
 
