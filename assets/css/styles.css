@@ -56,6 +56,11 @@ section {
 	padding: 100px 80px;
 }
 
+.section-list {
+	list-style: disc !important;
+	margin-left: 50px !important;
+}
+
 section:not(.main):nth-child(even) {
 	background-color: #ffffff;
 }
